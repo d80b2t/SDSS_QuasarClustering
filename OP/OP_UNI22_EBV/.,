@@ -1,0 +1,98 @@
+
+*OP_20080120		has UNIFORM 0.30 < z < 2.90
+
+*OP_20080121 	has UNIFORM 0.30 < z < 0.68 
+OP_20080122     	has UNIFORM 2.25 < z < 2.90
+*OP_20080122b 	has UNIFORM 0.68 < z < 0.92
+*OP_20080123   	has UNIFORM 0.92 < z < 1.13
+*OP_20080124 	has UNIFORM 1.13 < z < 1.32 
+*OP_20080215	has UNIFORM 1.32 < z < 1.50
+*OP_20080215b	has UNIFORM 1.50 < z < 1.66
+*OP_20080215c	has UNIFORM 1.66 < z < 1.83
+*OP_20080215d	has UNIFORM 1.83 < z < 2.02
+*OP_20080215e	has UNIFORM 2.02 < z < 2.25
+
+Okay, so there are differences between the files in the above directories. 
+The original, older files over each redshift-range, had the line: 
+    if (N_rnd .ge. N_rnd_total) istat =1 
+"on" in the FORTRAN code, essentially limiting the random file input read to x20 the 
+datas. Whereas, the more recent files, had this "off" hence getting a 1/3 MORE randoms
+per calculation. (32,648*20=652,960 vs. 1e6 in total). 
+So, this (should) explains the difference between e.g. the RR, xis_LS counts and values
+in the k_output.dat files. 
+Then, it definitely looks like the value of k_pi_para, it the pi_max cut, then explains
+the differences for the files that had the same number of randoms, but e.g. different
+values in the K_wp_sigma .dat files. 
+
+
+
+OP_20080307 	    	has UNIFORM 0.70 < z < 1.40		(for cf. DEEP2) 
+
+
+ OP_20080306 	has PRIMARY 0.30 < z < 2.90, 80<ra<280, i.e. NCG
+			    	(but this mask is not the best it could be and has been superceeded)
+ OP_20080315         again has a go using a first attempt of a PRIMARY data/random 
+		    	        sample. Again, hasn't really worked, with large-scale issues.
+
+ OP_20080427		has PRIMARY for 0.30<z<2.20, no ra,dec cuts. However, still doing
+ 			    	the randoms by "efficiency" so large-scale issues remain.
+ OP_20080504		The first attempt to do PRIMARY with uniform randoms. However, 
+ 			    	 there was an mrfits .fits issue, screwing up the .dat randoms file.
+ OP_20080506 	Was the NCG analogue of 20080504, with the same issues as above.
+ 		    	    	(One could put the 20080506 files into 20080504 to limit # dirs...)
+ OP_20080507	    	Was a second attempt to get the PRIMARY sample with a 'uniform' 
+ 			      	random distribution. This worked okay, but (small) issues still 
+				remain with  the RRs. e.g. the ang. mask  didn't look spot-on 
+				(stripes widening  at lambda -> +/- 90degs etc.), 
+				so went back and re-did that too.
+OP_20080510		Had these issues with the angular mask, better N(z) taken care of, 
+			    	but really didn't make *that* much difference at all...
+
+OP_20080516		Was the essentially the same as 20080510, but with the ~93deg^2
+			        of ``empty sectors'' having 0.5 and 0.0 completenesses.
+				This directory now also has the "BadFields" files, where we excluded
+				~14,000 fields  (~10,000 or 370 deg^2) over the spectroscopic 
+				footprint. Made *very* little difference. 
+
+OP_20080811		PRIMARY. Split the sample up into EDR/DR1 vs. DR2345 to
+				see if this had been the cause of the PRI upturn at large scales. 
+				It wasn't. And moreso, the total PRI sample (ie the "average"
+				of EDR/DR1 and DR2345, seemed to be lower than either or the
+				sub-samples. (Note also though that the EDR/DR1s are higher
+				than both the DR2345 and the full PRIMARYs.)
+
+
+
+
+*OP_20080508 	Has the UNIFORM sample, 0.30<z<2.20, for the full survey, the NCG
+		    		and the SGC. 
+				This directory, OP_20080508, also has the UNI22_picut22 and
+				UNI22_picut18 files in it.  
+				 
+OP_UNI22_jack_radecz		 has the 21 (20N, 1S) jackknife subsamples for the ra,dec,z points used 
+OP_UNI22_jack_zvalues		 has the 21 (20N, 1S) jackknife subsamples for the N(z)'s
+*OP_UNI22_jack_xis		 has the 21 (20N, 1S) jackknife subsamples for the xi(s)
+OP_UNI22_jack_xi_sigma_pi	 has the 21 (20N, 1S) jackknife subsamples for the 2D xi(sigma,pi)
+OP_UNI22_jack_wp		 	 has the 21 (20N, 1S) jackknife subsamples for the wp(sigma)
+
+
+UNI22_evol_5logbins_xis	 		 has the 10 (i.e. incl. 2.2<z<2.9) files for the xi(s)
+UNI22_evol_5logbins_xi_sigma_pi	 	 has the 10 (i.e. incl. 2.2<z<2.9) files for the 2D xi(sigma,pi)
+UNI22_evol_5logbins_wp	 		 has the 10 (i.e. incl. 2.2<z<2.9) files for the xi(s)
+
+
+*OP_UNI22_EBV   			 has the UNI22 data for the two ~15,000 strong UNIFORM d
+					        data files split by (dust) reddening using the 
+						Schlegel et al. (1998) maps. The data and random where 
+						split using dr5q_Ebv.pro and other code in the
+						../data/Quasars/Schlegel_dust_maps/CodeIDL directory.
+				Files used:
+				../data/DR5QSO_uni_data_EBV_le_0pnt0217.dat	 
+				../randoms/randoms_dat/randoms_npr_UNIFORM_EBV_le_0pnt0217.dat'
+				../data/DR5QSO_uni_data_EBV_gt_0pnt0217.dat
+				../randoms/randoms_dat/randoms_npr_UNIFORM_EBV_gt_0pnt0217.dat
+
+
+
+*key directories
+

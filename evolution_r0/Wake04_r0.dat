@@ -1,0 +1,7 @@
+# Wake et al., 2004, ApJ, 610, L85
+# "The Clustering of Active Galactic Nuclei in the Sloan Digital Sky Survey"
+# Since in David's paper, he only does relative comparisons to SDSS galaxies, 
+# we just quote the Zehavi et al. (2002, 
+# z_min	  z_mean    zmax      s0 s0plus s0minus		gamma	gammaplus	gamma
+0.055	  0.13 	    0.2    8.0     0.001 0.001 		1.2 0.001 0.001
+0.055	  0.13 	    0.2    8.0     0.001 0.001  	    	1.2 0.001 0.001

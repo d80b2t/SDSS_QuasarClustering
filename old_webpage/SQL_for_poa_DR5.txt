@@ -1,0 +1,18 @@
+This is the SQL query, run via the CasJobs server, 
+that generates the poa_best_DR5 and poa_targ_DR5 data files. 
+
+
+SELECT 
+       ra, dec, objID, field, obj, primTarget, specObjID 
+FROM 
+     PhotoObjAll
+WHERE
+	((primTarget & 0x0000001f) > 0)
+
+
+Gives 202,958 objects on the DR5 (best) `context' in poa_best_DR5.dat
+while, the TargDR5 context gives 203,185 objects in poa_targ_DR5.dat
+
+
+npr
+09 April 2008

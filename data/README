@@ -1,0 +1,72 @@
+
+FROM DR5Q, total 77 429 objects. 
+The ``first'' column of numbers shows which the number of objects per each flag. 
+V.I. Notes: Any given object can easily have >1 flag set. 
+     	    	: In Schneider et al. (2007),  	`Low-z'   = QSO_SKIRT + QSO_CAP
+     	    	:    	       	      	       	       	 	`High-z' = HIZ  + (HIZ and FAINT)   = (33554433)
+		:						`FIRST'    = FIRST_CAP + FIRST_SKIRT
+		:							  
+
+				
+Number of objects where target_flag_bin[           0] =1 is       0		-
+Number of objects where target_flag_bin[           1] =1 is       0		- 
+Number of objects where target_flag_bin[536870912] =1 is      	  69		QSO_REJECT			1
+Number of objects where target_flag_bin[268435456] =1 is        	   1		STAR_PN				0
+Number of objects where target_flag_bin[134217728] =1 is        1809		ROSAT_E				2
+Number of objects where target_flag_bin[  67108864] =1 is              3		GALAXY_RED_II		0
+Number of objects where target_flag_bin[  33554432] =1 is      17734		QSO_FAINT		  1594
+Number of objects where target_flag_bin[  16777216] =1 is              6		SERENDIP_MANU		0	  
+Number of objects where target_flag_bin[    8388608] =1 is          903		SERENDIP_DIST	        6	  
+Number of objects where target_flag_bin[    4194304] =1 is              2		SERENDIP_RED			0
+Number of objects where target_flag_bin[    2097152] =1 is        3529 		SERENDIP_FIRST	    102
+Number of objects where target_flag_bin[    1048576] =1 is      40273	 	SERENDIP_BLUE	  2154
+Number of objects where target_flag_bin[      524288] =1 is           234		STAR_WHITE_DW		0
+Number of objects where target_flag_bin[      262144] =1 is      	    0		STAR_RED_DWAR		0
+Number of objects where target_flag_bin[      131072] =1 is         1118		STAR_CATY_VAR		0
+Number of objects where target_flag_bin[        65536] =1 is      	    2		STAR_SUB_DWAR		0	
+Number of objects where target_flag_bin[        32768] =1 is       	    0		STAR_BROWN_D	    	0 
+Number of objects where target_flag_bin[        16384] =1 is           201		STAR_CARBON		      30
+Number of objects where target_flag_bin[          8192] =1 is           479		STAR_BHB		    106
+Number of objects where target_flag_bin[          4096] =1 is         4752		ROSAT_D			      19
+Number of objects where target_flag_bin[          2048] =1 is         4180		ROSAT_C				5
+Number of objects where target_flag_bin[          1024] =1 is         4591 	ROSAT_B				0
+Number of objects where target_flag_bin[            512] =1 is      	753		ROSAT_A			    	0
+Number of objects where target_flag_bin[            256] =1 is       	    0		GALAXY_BRI_CO		0
+Number of objects where target_flag_bin[            128] =1 is       	    7		GALAXY_BIG			0   
+Number of objects where target_flag_bin[              64] =1 is      	530		GALAXY			      77
+Number of objects where target_flag_bin[              32] =1 is      	  20		GALAXY_RED			2
+Number of objects where target_flag_bin[              16] =1 is      	949		FIRST_SKIRT	      	      68
+Number of objects where target_flag_bin[                8] =1 is         2552		FIRST_CAP	    	    158
+Number of objects where target_flag_bin[                4] =1 is      15288		QSO_SKIRT	  	  5614
+Number of objects where target_flag_bin[                2] =1 is      33722		QSO_CAP			10808
+Number of objects where target_flag_bin[                1] =1 is      16383		HIZ			          3713
+															zero	                          2836
+
+Interesting Numbers:     THOSE THAT ARE (QSO_HIZ and QSO_FAINT only:)	1614 (+3713=5327) 
+
+No. with (FIRST_CAP    AND SEREN_FIRST only i.e. 2097160) =    139
+No. with (FIRST_SKIRT AND SEREN_FIRST only i.e. 2097168) =      53
+
+out of 17,734 FAINT
+No. with (FAINT                                        only)  =   1594
+No. with (FAINT            and HIZ               only)   =  1614
+No. with (FAINT            and SEREN_BLUE  only)  = 11564
+No. with (FAINT            and SEREN_FIRST  only) =  1569
+No. with (FAINT            and SEREN_RED  only)   =        2
+No. with (FAINT            and SEREN_DIST  only)   =    130
+
+leaves 1,261...
+
+
+ROSAT_A thru ROSAT_D (ge 512, lt 8192) = 1171
+
+
+
+
+From Yue Shen sample:
+38 208 objects (full)
+33699 (with z<=2.9)
+33011 (with z<=2.5)
+
+
+

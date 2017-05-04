@@ -1,0 +1,19 @@
+README file for
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/randoms/
+
+Files with randoms on and before 20 Jan 2008, are for the UNIFORM, (Shen et al., 2007)
+33,000 object strong sample.
+
+These have either `UNIFORM' or 'Shen' in their name (unsurprisingly).
+
+
+The other random_npr.dat files are based on the PRIMARY DR5Q sample that
+I've been labouring to make in 
+/Volumes/Bulk/npr/cos_pc19a_npr/data/Quasars/CAS/mask/
+
+
+../data/DR5QSO_pri_data.dat 
+has 50 062 lines, i.e. is the PRIMARY sample, with z<=2.90. 
+Recall that the full PRIMARY sample has 55 577 objects (cf. 77 429 for the full DR5Q).
+
+

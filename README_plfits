@@ -1,0 +1,213 @@
+=======================================================
+	22 February 2008
+=======================================================
+
+Running:
+	> ./s0_gamma_from_xi_s_new.x  (version 20080222)
+
+
+on:
+	OP/OP_20080120/k_output_20080120_0pnt30z2pnt90.dat	(choice=0)
+gives:
+	 n_input 39
+	 chi_sq_min, j_min,   k_min
+	 11.569211077933042 79 87
+	 5.9000   1.1800  1.0517465
+	 1. 25.
+and
+	 n_input 39
+	 chi_sq_min, j_min,   k_min
+	 32.27986920942312 78 166
+	 5.8500   1.5750  1.8988158
+	 1. 100.
+
+
+
+on:
+	OP/OP_20080121/k_output_20080121_0pnt30z0pnt68.dat        (choice=1) 
+gives:
+	n_input 35
+	1, chi_sq_min, j_min,   k_min
+	12.436098102718965 83 178
+	n_input 35 Count 13 degs_of_free 11
+	6.1000   1.6350  1.1305544
+	1. 25.
+and
+	n_input 35
+	chi_sq_min, j_min,   k_min
+	14.995398195501446 82 185
+	n_input 35 Count 19 degs_of_free 17
+	6.0500   1.6700  0.8820822
+	1. 100.
+
+
+
+on:
+	OP/OP_20080122b/k_output_20080122_0pnt68z0pnt92.dat        (choice=2)
+gives: 
+       n_input read-in 33
+       chi_sq_min,   j_min,   k_min
+       6.402792499286479 102 198
+       best fit   s0, gamma,  with chi_sq_min/DoF 
+       7.0500   1.9800  0.8003491    :-)
+       s_lo, s_hi 1. 25.
+and
+	n_input read-in 33
+	chi_sq_min,   j_min,   k_min
+	13.267318976533133 92 234
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	6.5500   2.3400  0.9476656
+	s_lo,  s_hi 1. 100.    :-)
+
+
+
+
+on:
+	OP/OP_20080123/k_output_20080121_0pnt92z1pnt13.dat
+gives:
+	n_input read-in 33
+	chi_sq_min, j_min,   k_min
+	9.894457051661352 57 17
+	4.8000   0.8300  1.4134939
+	1. 25.
+and	
+	n_input read-in 33
+	chi_sq_min,   j_min,   k_min
+	14.535846475023911 114 212
+	 best fit   s0, gamma,  with chi_sq_min/DoF 
+	 7.6500   1.8050  1.1181420
+	 s_lo, s_hi 1. 100.
+
+
+
+on:
+	OP/OP_20080124/k_output_20080121_1pnt13z1pnt32.dat
+gives:
+	n_input read-in 32
+	chi_sq_min,   j_min,   k_min
+	2.5916443983580204 100 48
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	6.9500   0.9850  0.4319407
+	s_lo, s_hi 1. 25.
+and
+	n_input read-in 32
+	chi_sq_min,   j_min,   k_min
+	17.532630386161266 123 215
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	8.1000   1.8200  1.4610525
+	s_lo, s_hi 1. 100.
+
+
+
+on:
+	OP/OP_20080215/k_output_20080215_1pnt32z1pnt50.dat    (choice=5)
+gives:
+	n_input read-in 34
+	chi_sq_min,   j_min,   k_min
+	5.205410715649443 82 232
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	6.0500   2.3200  0.7436301
+	s_lo, s_hi 1. 25.   :-)
+and
+	n_input read-in 34
+	chi_sq_min,   j_min,   k_min
+	20.10685969342876 82 242
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	6.0500   2.4200  1.5466815  => 13 DoF (15 points fitted)
+	s_lo, s_hi 1. 100.    :-)
+
+
+
+on:
+	OP/OP_20080215b/k_output_20080215_1pnt50z1pnt66.dat
+gives
+	n_input read-in 35
+	chi_sq_min,   j_min,   k_min
+	12.542056978146134 75 153
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	5.7000   1.5100  1.5677571
+	s_lo, s_hi 1. 25.
+and
+	n_input read-in 35
+	chi_sq_min,   j_min,   k_min
+	15.017336283338643 77 188
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	5.8000   1.6850  1.0726669
+	s_lo, s_hi 1. 100.
+
+
+
+on:
+	OP/OP_20080215c/k_output_20080215_1pnt66z1pnt83.dat  (choice=7)
+gives
+	n_input read-in 33
+	chi_sq_min,   j_min,   k_min
+	1.1271278212415659 93 99
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	6.6000   0.9900  0.1878546
+	s_lo, s_hi 1. 25.	:-)
+and
+	n_input read-in 33
+	chi_sq_min,   j_min,   k_min
+	8.974183265612824 115 225
+	 best fit   s0, gamma,  with chi_sq_min/DoF 
+	 7.7000   1.8700  0.7478486
+	 s_lo, s_hi 1. 100.
+
+
+on
+	OP/OP_20080215d/k_output_20080215_1pnt83z2pnt02.dat (choice=8)
+gives
+	n_input read-in 34
+	chi_sq_min,   j_min,   k_min
+	2.906100280096867 114 15
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	7.6500   0.8200  0.4151572
+	s_lo, s_hi 1. 25.
+and
+	n_input read-in 34
+	chi_sq_min,   j_min,   k_min
+	8.638827235672075 138 160
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	8.8500   1.6000  0.6645252
+	s_lo, s_hi 1. 100.      :-)
+
+		
+on:
+	OP/OP_20080215e/k_output_20080215_2pnt02z2pnt25.dat (choice=9) 
+gives
+	n_input read-in 33
+	chi_sq_min,   j_min,   k_min
+	3.407064568861668 39 190
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	3.9000   1.9000  0.6814129
+	s_lo, s_hi 1. 25.     :-)
+and
+	n_input read-in 33
+	chi_sq_min,   j_min,   k_min
+	9.859866293207377 24 107
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	3.1500   1.0700  0.8963515
+	s_lo, s_hi 1. 100.   :-)
+
+
+
+on:
+	OP/OP_20080122/k_output_20080122_2pnt25z2pnt90.dat (choice=10) 
+gives:
+	n_input read-in 31
+	chi_sq_min,   j_min,   k_min
+	0.028011884926838558 184 276
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	11.1500   2.7600  0.0093373
+	s_lo, s_hi 1. 25.     :-)
+and:
+	n_input read-in 31
+	chi_sq_min,   j_min,   k_min
+	2.5042713027469015 42 82
+	best fit   s0, gamma,  with chi_sq_min/DoF 
+	4.0500   0.8200  0.2782524
+	s_lo, s_hi 1. 100.
+
+
+

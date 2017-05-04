@@ -1,0 +1,11 @@
+Having just had a quick check at quorrel_five_perl.f90 (in ../programs/quasars/2pt/), 
+I think that these are are Very large, i.e. upto 3000 h^-1 Mpc scale files, with
+linear binning in s, since the code retains the line:
+       k_lin     = int(s/50.) + 1
+and outputs upto k_lin .le. 56. 
+
+Also, the values of xi(s) are just too small on so-called "2.5", "7.5" and "12.5" h^-1 Mpc
+scales.  These have got to be 25, 75, and 125 h^-1 Mpc respectively.
+
+npr
+22 aug 2008

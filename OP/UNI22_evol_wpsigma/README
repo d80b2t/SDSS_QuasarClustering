@@ -1,0 +1,47 @@
+
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/OP/UNI22_evol_5logbins_wpsigma/
+
+
+has the redshift-space sub-sample files in it:
+
+-rw-r-----   1 npr  astro  1116 Jul 20 19:45 K_wp_output_UNI22_0pnt68z0pnt92.dat
+-rw-r-----   1 npr  astro  1122 Jul 20 19:58 K_wp_output_UNI22_0pnt92z1pnt13.dat
+-rw-r-----   1 npr  astro  1221 Jul 20 20:04 K_wp_output_UNI22_1pnt13z1pnt32.dat
+-rw-r-----   1 npr  astro  1207 Jul 20 20:07 K_wp_output_UNI22_1pnt50z1pnt66.dat
+-rw-r-----   1 npr  astro  1034 Jul 20 20:10 K_wp_output_UNI22_1pnt32z1pnt50.dat
+-rw-r-----   1 npr  astro  1328 Jul 20 20:24 K_wp_output_UNI22_0pnt30z0pnt68.dat
+-rw-r-----   1 npr  astro   995 Jul 20 20:28 K_wp_output_UNI22_2pnt02z2pnt20.dat
+-rw-r-----   1 npr  astro  1101 Jul 20 20:39 K_wp_output_UNI22_1pnt83z2pnt02.dat
+-rw-r-----   1 npr  astro  1120 Jul 20 21:17 K_wp_output_UNI22_1pnt66z1pnt83.dat
+-rw-r-----   1 npr  astro  1076 Jul 21 10:52 K_wp_output_UNI22_2pnt20z2pnt90.dat
+-rw-r-----   1 npr  astro  1213 Aug  4 16:50 K_wp_output_UNI22_0pnt00z0pnt30.dat
+
+
+The pi_cut was:  63 h^-1 Mpc. i.e.
+ if(k_pi_para .le. 20) then 
+for the K_wp_output_UNI22 files.
+
+
+So N.B. some of these files have been modified from their original format for plotting 
+purposes. e.g. wp(rp) and wp(rp)/rp plots. 
+
+When we plot wp(rp) or wp(rp)/rp, the minimum scales we plot down to are always rp=0.4 h^-1 Mpc. 
+
+- K_wp_output_UNI22_0pnt00z0pnt30.dat for the point at 0.50 h^-1 Mpc
+(- K_wp_output_UNI22_0pnt30z0pnt68.dat for the point at 0.19 h^-1 Mpc)
+- K_wp_output_UNI22_0pnt68z0pnt92.dat for the points at 0.50, 0.79 h^-1 Mpc
+- K_wp_output_UNI22_0pnt92z1pnt13.dat for the points at 0.19, 0.50, 0.79 h^-1 Mpc
+- K_wp_output_UNI22_1pnt13z1pnt32.dat for the points 0.19, 0.50 h^-1 Mpc
+- K_wp_output_UNI22_1pnt32z1pnt50.dat for the points 0.19, 0.50, 0.79, 1.25 h^-1 Mpc
+- K_wp_output_UNI22_1pnt50z1pnt66.dat for the points 0.19, 0.79 h^-1 Mpc
+- K_wp_output_UNI22_1pnt66z1pnt83.dat for the points 0.19, 0.50, 0.79 h^-1 Mpc
+- K_wp_output_UNI22_1pnt83z2pnt02.dat for the points 0.19, 0.50, 0.79 h^-1 Mpc
+- K_wp_output_UNI22_2pnt02z2pnt20.dat for the points 0.19, 0.50, 0.79, 1.25 h^-1 Mpc 
+- K_wp_output_UNI22_2pnt20z2pnt90.dat for the points 0.19, 0.50, 0.79 h^-1 Mpc.
+
+
+Note also, there is no rp=0.316  =>  log(rp) =-0.5   point in the full data:
+OP/OP_20080508/K_wp_output_UNI22.dat
+
+
+

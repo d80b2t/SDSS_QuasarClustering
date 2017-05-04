@@ -1,0 +1,51 @@
+R E A D M E 
+-----------
+
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/plots/wp_sigma_div_sigma > 
+
+
+wp_sigma_div_sigma_DR5_quasars_3by4_for_evol_20090213
+has the errors from both the Poisson:Jackknife "geometric mean" method
+i.e. x5 at rp<10 h^ Mpc and x45 at rp >h^-1 Mpc
+as dashed, green lines. 
+The variable in the .pro file is e.g. "error2_div_sigma_0pnt30z0pnt68". 
+
+
+wp_sigma_div_sigma_DR5_quasars_3by4_for_evol_20090220.pdf
+has the original wp(rp) points, and the scaled  Poisson:Jackknife errors 
+using the information from all scaling scales (!, given by black filled
+circles, solid black lines). 
+Also has points from getting wp(rp) with the LS estimator but including
+bins with no DD pairs (but that have values since there are DR and RR pairs). 
+Then, the "summed variance" Poisson error estimates are also shown, BUT
+using the "regular w/DD" data points. These are the green, dashed points and lines.
+
+
+
+wp_sigma_div_sigma_DR5_quasars_3by4_for_evol_20090220v2.pdf
+has the original wp(rp) points, and the scaled  Poisson:Jackknife errors 
+using the information from all scaling scales (!, given by black filled
+circles, solid black lines). 
+Also has points from getting wp(rp) with the LS estimator but including
+bins with no DD pairs (but that have values since there are DR and RR pairs). 
+Then, the "summed variance" Poisson error estimates are also shown, BUT
+using the noDD data points. These are the green, dashed points and lines.
+
+wp_sigma_div_sigma_DR5_quasars_3by4_for_evol_20090220v3.pdf
+has the original wp(rp) points, and the scaled  Poisson:Jackknife errors 
+using the information from all scaling scales (!, given by black filled
+circles, solid black lines). 
+Also has points from getting wp(rp) with the LS estimator but now not including
+bins with no DD pairs (just like the "original" estimates)  
+Then, the "summed variance" Poisson error estimates are also shown, AND
+using the "regular w/DD" data points. These are the green, dashed points and lines.
+
+
+wp_sigma_div_sigma_DR5_quasars_3by4_for_evol_20090225.pdf
+has the 'regular' points, with the scaled errorbars and the corresponding
+power-law fit (keeping gamma=-2). 
+
+
+wp_sigma_div_sigma_DR5_quasars_3by4_for_evol_20090225v2.pdf
+has the 'regular' points, now with the "summed variances" errorbars
+and the corresponding, power-law fits (again, gamma held at -2). 

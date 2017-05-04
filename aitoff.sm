@@ -1,0 +1,69 @@
+#DEVICE x11
+#DEVICE nodevice
+#DEVICE postscript		# This little command prints out your graph!
+
+readcol "data/DR5QSO_uni_data.dat", 
+
+aitoff 15  #converts l and b to x y in aitoff coordinates: 
+           #aitoff l b x y <break>
+           if (!$?5) {define _break 0} else {define _break $5}
+           set _rl = ($1-$_break)
+           set _rl = (_rl>360)?(_rl-360):_rl
+           set _rl = (_rl<0)?(_rl+360):_rl
+           set _rl = 90. - 0.5*_rl
+           set _den = sqrt(1 + cosd($2)*cosd(_rl))
+           set $3 = 2.*cosd($2)*sind(_rl)/_den
+           set $4 = 90.*sind($2)/_den
+           set $3 = 180. - 90.*$3
+           if ($?invaitoff) {
+             if ($invaitoff) {set $3 = 360. - $3}}
+           delete _rl
+           define _break delete
+           delete _den
+
+aitoffgrid 11 #Puts up equal area grid in Aitoff
+        #Argument is azimuthal angle at which to break (default 0)
+        #This command only makes sense in landscape mode
+        location 2000 31000 6500 25918
+        if ($?aitoffsegment) {
+        if ($aitoffsegment == 1) {location 3000 30000 17809 31309}
+        if ($aitoffsegment == 2) {location 3000 30000 1425 14925}
+        }
+        ltype 1
+        limits 0 360 -90 90
+        do _i = -75,75,15 {
+          set _l = 0, 360
+          set _b = _l
+          set _b = $_i
+          aitoff _l _b _x _y
+          connect _x _y
+        }
+        if (!$?1) {define _break 0} else {define _break $1}
+        #relocate -2 0
+        #define lower_label (($_break<0)?($_break+360):$_break)
+        #putlabel 4 $lower_label
+        do boo = 0, 360, 60 {
+        relocate $boo -10
+        if ($?invaitoff) {
+          if ($invaitoff) {relocate $(360-$boo) -10}}
+        define upper_label ($boo+$_break)
+        define upper_label (($upper_label>=360)?($upper_label-360):$upper_label)
+        putlabel 5 $upper_label}
+        #relocate 362 0
+        #label $lower_label
+        foreach delta (-60 -30 30 60) {
+          aitoff 180 $delta x y
+          relocate (x+10) y
+          putlabel 5 $delta}
+        do _i = 0, 360, 30 {
+          set _b = -90, 90
+          set _l = _b
+          set _l = $_i 
+	   aitoff _l _b _x _y
+          connect _x _y
+        }
+        delete _l
+        delete _b
+        delete _x
+        delete _y
+        ltype 0

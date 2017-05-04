@@ -1,0 +1,14 @@
+README
+-------
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/chisq/
+
+
+xis/ 
+is (kinda obviously) for the redshift-space correlation functions. 
+Usually fitting a single power-law over 25 h^1 Mpc (which gives an acceptable fit) or
+100 h^1 Mpc (which doesn't give an acceptabla fit expect for the high-z subsamples). 
+
+wpsigma/
+is  (kinda obviously) for the projected correlation function, w_{p}(\sigma). 
+but copies a lot of the code from xis/
+

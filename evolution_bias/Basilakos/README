@@ -1,0 +1,122 @@
+README for ../cos_pc19a_npr/programs/quasars/evolution_bias/Basilakos/
+
+
+Date: Tue, 8 Jul 2008 09:42:18 +0300 (EETDST)
+From: Dr. Spyros Basilakos <svasil@astro.noa.gr>
+To: Nic Ross <npr@astro.psu.edu>
+Subject: Re: Evolution of quasar clustering
+Parts/Attachments:
+   1 Shown    168 lines  Text
+   2   OK    ~1.7 KB     Text
+   3   OK    ~1.7 KB     Text
+   4   OK    ~1.7 KB     Text
+   5   OK    ~834 bytes  Text
+   6   OK    ~834 bytes  Text
+----------------------------------------
+
+
+Dear Nick,
+
+I had a look on the M=1e+13 bias evolution and I realize that
+I've sent you a wrong file. Here are the predictions of my models up to z=7:
+
+-------------Interaction + no Interaction------------------
+Mass=1e+12 C1=1.504 c2=-0.147 A=0.002 \nu=2.56
+Mass=7e+12 C1=2.914 c2=-0.274 A=0.002 \nu=2.56
+Mass=1e+13 c1=3.290 c2=-0.360 A=0.002 \nu=2.56 (THE CORRECT FILE)
+-------------------------------------------------------------
+
+As we point out in our paper for those halos with M>6e+13 the interactive
+term fit well the simulated data (see fig.1 in our work).
+
+Mass=7e+13 c1=6.376 c2=-0.573
+Mass=1e+14 c1=7.198 c2=-0.752
+
+Finally, I would like also to stress that our model is powerful in a sense that giving the measured bias evolution you can have an estimate
+of the parent dark matter halo.
+Notice, that I definitely trust my models within z\le 5
+since in our paper we used 10 different redshift LCDM snapshots,
+spanning the range 0\le z \le 5. Of course I believe that the models
+should perform well also for z>5 but this is something that we have to check with the data.
+
+If you need anything else let me know
+I think that now the corrected Mass=1e+13 should match with the bias
+evolution of optical QSOs.
+
+best regards
+spyros
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Date: Mon, 7 Jul 2008 17:58:03 +0100 (BST)
+From: Nic Ross <nicholas.ross@durham.ac.uk>
+To: npr@astro.psu.edu
+Subject: Forwarded mail....
+Parts/Attachments:
+   1 Shown     40 lines  Text
+   2   OK    ~1.2 KB     Text
+   3   OK    ~1.2 KB     Text
+   4   OK    ~615 bytes  Text
+----------------------------------------
+
+---------- Forwarded message ----------
+Date: Mon, 7 Jul 2008 10:01:24 +0300 (EETDST)
+From: Dr. Spyros Basilakos <svasil@astro.noa.gr>
+To: Nicholas.Ross@durham.ac.uk
+
+
+Dear Nick,
+
+Finally, I've managed to find some time in order to finish with the bias
+issue and here are the details:
+
+------------------Cosmology Om=0.27 s8=0.9-----------------------
+
+(a) bias.mass1e+12 Mass=1e+12 C1=1.504 C2=-0.147  (from eq. 24) A=0.002
+\nu=2.56
+(b) bias.mass1e+13 Mass=1e+13 c1=3.290 c2=-0.307 A=0.005 \nu=2.62
+
+Now, (i) first column=z (bin=0.2)
+(ii) second column=b(z) including the interactive term
+(iii) third column=b(z) without the interactive term
+(iv) last column is the difference between (ii)-(iii)
+
+As you can see the interaction among the halos starts to affect the bias
+evolution at relatively large redshifts (z>2), which is expected within
+the framework of the LCDM model.
+
+(c) bias.mass1e+14: Mass=1e+14  C1=7.198 C2=-0.642
+
+(i) first column =z
+(ii) column = b(z)
+Note that at those scales we find that the interactive does not
+affect really the bias evolution (see the discussion
+in our paper - section 3.2)
+----------------------------------------------------------------------
+
+I'm looking forward to see the comparison (data+models).
+
+If you need anything else let me know.
+
+best regards
+Spyros
+    [ Part 2, Text/PLAIN (Name: "bias.mass1e+12")  54 lines. ]
+    [ Not Shown. Use the "V" command to view or save this part. ]
+
+
+    [ Part 3, Text/PLAIN (Name: "bias.mass1e+13")  54 lines. ]
+    [ Not Shown. Use the "V" command to view or save this part. ]
+
+
+    [ Part 4, Text/PLAIN (Name: "bias.mass1e+14")  26 lines. ]
+    [ Not Shown. Use the "V" command to view or save this part. ]
+
+
+

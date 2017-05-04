@@ -1,0 +1,11 @@
+# Myers et al., 2007, ApJ, 658, 85, CLUSTERING ANALYSES OF 300,000 PHOTOMETRICALLY CLASSIFIED QUASARS. I. LUMINOSITY AND REDSHIFT EVOLUTION IN QUASAR BIAS
+# Table 1
+# zphot                    One-Parameter Model						Two-Parameter Model		                 Gamma = 0.15,sigma8 = 0.8 (One-Parameter Model)
+# z_lo, z_hi, z_bar, bQ, bQ_plus, bQ_minus,	M_DMH, plus, minus	a, plus, minus,  bQ, bQ_plus, bQ_minus,  , bQ, bQ_plus, bQ_minus, M_DMH, plus, minus
+#
+#0.4  2.3  1.40  2.41  0.08  0.09			12.1    1.3  1.4e12		0.956  0.044  0.019  2.48  0.13  0.15       2.57  0.10  0.09  5.72   0.84  0.70e12
+0.4  1.0  0.75  1.93  0.14  0.15  			8.90    2.71  2.46e12 	0.903  0.097  0.041  1.95  0.25  0.33  	 2.06  0.14  0.16  4.08   1.32  1.25e12
+1.0  1.4  1.20  2.05  0.11  0.11  			12.5    2.3  2.1e12  	        0.997  0.003  0.092  2.06  0.25  0.18  	 2.16  0.11  0.12  5.70   1.15  1.11e12
+1.4  1.7  1.53  2.23  0.17  0.19  			9.22    2.49  2.40e12  	0.884  0.057  0.036  2.35  0.32  0.37  	 2.39  0.18  0.20  4.30   1.33  1.23e12
+1.7  2.1  1.87  2.81  0.13  0.14  			11.3    1.7  1.7e12  	        0.907  0.077  0.037  3.05  0.25  0.26  	 3.00  0.14  0.15  5.32   0.94  0.90e12
+2.1  2.8  2.28  2.84  0.40  0.47  			11.3    5.0  4.6e12  		0.840  0.091  0.039  3.20  0.76  0.98  	 3.13  0.43  0.50  5.95   2.92  2.56e12

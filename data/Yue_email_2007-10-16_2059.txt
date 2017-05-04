@@ -1,0 +1,95 @@
+Date: Tue, 16 Oct 2007 20:59:03 -0400 (EDT)
+From: Yue Shen <yshen@astro.princeton.edu>
+To: Nic Ross <npr@astro.psu.edu>
+Subject: uniform DR5 quasar/random catalogs
+
+
+Dear Nic,
+
+I have generated the data/random catalogs. Please download 
+http://www.astro.princeton.edu/~yshen/DR5_QSO_clustering/DR5QSO_uni_data.fits.tar.gz  for the quasar sample and 
+http://www.astro.princeton.edu/~yshen/DR5_QSO_clustering/DR5QSO_uni_random_RADEC.fits.tar.gz  for the random sample.
+
+The data sample is ready for CF measurements, which only contains 
+uniformly-selected SDSS quasars, which is flux limited to dereddened 
+i=19.1 at z<2.9, and flux limited to i=20.2 at z>~2.9. The random sample 
+contains 1,000,000 random (RA,DEC) points according to the angular 
+geometry of the data sample (you don't need to use them all of course).
+
+The data/random format is an IDL structure, so you can read them in using 
+"mrdfits" in IDL Goddard Utilities:
+
+IDL> data = mrdfits('DR5QSO_uni_data.fits', 1)
+IDL> random = mrdfits('DR5QSO_uni_random_RADEC.fits', 1)
+
+The "data" struct contains a lot of tags, but you only need data.ra, 
+data.dec and data.z, which are the ra, dec, redshift for SDSS quasars. The 
+"random" struct contains two tags, namely, random.ra and random.dec.
+
+You may want to avoid the dip in the quasar redshift distribution around 
+z=2.7 caused by selection inefficiency. I think it should be safe if you 
+cut the quasar sample at z<2.5 (which cut I am using to do the 
+luminosity-dependence of clustering at lowz).
+
+OK, that's it. Let me know if anything is not clear. I am measuring the 
+redshift space CF for the sample too, so it is good to check with your 
+measurements to make sure everything is consistent. If any problem comes 
+along, just drop me an email. Thanks!
+
+-- 
+Yue Shen
+Astrophysical Sciences
+Peyton Hall (609-258-8057)
+Princeton University
+Princeton, NJ 08544
+
+On Mon, 15 Oct 2007, Nic Ross wrote:
+
+> Dear Yue,
+>
+> It was good to talk to you and Michael
+> this afternoon and thank you very much for
+> your offer of the DR5 quasar catalogues.
+>
+> As suggested by Don, I thought'd it best just to
+> make contact with you, to see if we could
+> get some of the required `foundations' (and to see
+> if I can reproduce any of your results!) in place
+> before I'm away observing in just under 2 weeks time
+> (for ~2 weeks).
+>
+> I don't know what would be easiest for you, but
+> as stated on the phone, I do use IDL, but I am
+> actually still a relative novice, though have access
+> to IDL experts here in our department if need be.
+>
+> Also, to confirm, I think it would be a good
+> starting point to see how the quasar redshift-space
+> correlation function appears in 2-D xi(sigma,pi),
+> and hopefully the redshift-space distortions will
+> be apparent.
+>
+> If we then wanted to get cosmological parameter
+> information out of the z-space distortions, we/I
+> would have to have a careful think about the best
+> way forward (i.e. simple convolution models, or
+> perhaps more detailed N-body/semi-analytic
+> simulations...?) but probably best to take this
+> one step at a time!
+>
+> Great, so please, just let me know if there
+> is anything I can do to help.
+>
+> Thanks again,
+> Nic
+>
+>
+> ------------------------------------------------
+> Nicholas P. Ross
+> Department of Astronomy and Astrophysics
+> The Pennsylvania State University
+> 525 Davey Lab, University Park, PA 16802 USA
+> Phone: (814) 863-0733
+> ------------------------------------------------
+>
+>

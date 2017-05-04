@@ -1,0 +1,27 @@
+
+O/P FILES
+-----------
+The *double* files were a first attempt at taking care of the fibre collisions and I'm pretty sure involved using the PRIMARY DR5Qs to see which imaging quasar candidate objects (i.e. the "POAs") we "collided".  These were not used in the paper.
+
+
+The 'regular' "wFibre" files are those using the UNIFORM DR5Qs to work out collisions and the photo-z catalogues to assign missing redshifts. This is w/Fib corr, choice (1).
+
+
+wFibre_v2 is the same again, but with the missing redshifts being assigned from the quasar redshift that "knocked out" the collided object (DHWs suggestion). This is w/Fib corr, choice (1).
+
+
+CHANGE IN DD=0 PAIR COUNTS
+----------------------------
+N.B. During the process of doing the 2PCF DR5Q study, I change the main FORTRAN 
+programme, quorrel_five_perl.f90, such that it dealt with cases where there no DD pairs 'better'.  Thus, in e.g. k2d_output_UNI22_wFibre_v2.dat, there are values for xi(sigma,pi) when there are non-zero DRs and RRs, but zero DDs (previously DD=0 => xi=0). 
+
+However, this makes an e.g. wp(rp)/rp comparison to the UNI22 data (found in 
+OP/OP_20080508/k2d_output_UNI22.dat) tricky. 
+
+As such, I go back to the original xi(sigma,pi) pair counts for both k2d_output_UNI22.dat and k2d_output_UNI22_wFibre_v2.dat in order to recalculate the wp(rp)/rp at sigma=0.199 to 1.99 inclusive, and make a fair DD=0 => xi_LS=0 comparison. 
+(Note pi_cut remains at 63 h^-1 Mpc). 
+
+
+
+npr
+07 feb 2009

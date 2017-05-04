@@ -1,0 +1,19 @@
+R E A D M E
+----------
+
+
+README file from quasars/plots
+---------------------------
+
+Here is the (IDL) code for making the plots for the SDSS DR5 Quasar
+correlation function work. 
+
+The plots directory itself is split up in
+xis           - for the redshift-space correlation function (including the evolution "3x4" grid)
+xi_sp        - for the `2D' correlation function, xi(rp, pi)
+wp_sigma - for wp(rp) and thus incorrectly named with "sigma" as the across-the-line-of-sight variable
+wp_sigma_div_sigma - wp(rp)/rp plots including the 3x4 evolution grid.
+
+
+npr
+21 feb 2009

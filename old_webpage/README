@@ -1,0 +1,57 @@
+R E A D M E
+---------
+
+http://www.astro.psu.edu/users/npr/DR5/
+
+
+File name (size in lines and MB)
+     Short Description
+
+
+
+
+
+
+Files to definitely include:
+---------------------
+DR5Q catalogue
+DR5Q UNIFORM catalogue (ra,dec,z,rc)
+quorrel_five_perl.f90
+README
+Warranty
+q_z_bin_v1_05.pro 
+DR5Q_data.pro (doesn't really help *that* much)
+
+some/all(?!) of the IDL plotting routines:
+
+(including references/acknowledgements to
+THE IDL ASTRONOMY USER'S LIBRARY 
+and the redshift routines from 
+http://cerebus.as.arizona.edu/~ioannis/research/red/
+)
+
+
+Files to maybe include:
+---------------------
+The 203,186 POA file(s)
+The random catalogues (??? - as a checker to see if anyone
+cares?!)
+
+
+
+
+
+
+Nicholas P. Ross
+npr@astro.psu.edu
+
+Department of Astronomy and Astrophysics
+The Pennsylvania State University
+525 Davey Lab 
+University Park, PA 16802 
+U.S.A.
+
+
+npr
+22 October 2008
+

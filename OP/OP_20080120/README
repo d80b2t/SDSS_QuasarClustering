@@ -1,0 +1,6 @@
+These files (I'm pretty sure) are generated using:
+
+DATA FILE:         	DR5QSO_uni_data
+RANDOMS FILE:  	randoms_npr_UNIFORM.dat (which is originally from 
+					DR5QSO_uni_random_RADEC.fits
+with 0.30<z<2.90

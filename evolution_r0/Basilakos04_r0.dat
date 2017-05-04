@@ -1,0 +1,10 @@
+# z_lo	z  	z_hi  	 r0	   r0_plus  r0_minus	gamma	plus	minus
+#
+# Basilakos et al., 2004, ApJ, 607, L79
+# Table 1, (Omega_M, Omega_lambda)=(0.3,0.7), Ueda(2003) LFs  => (bold rows)
+#
+#0.001	0.45	0.001	13.0	2.0	2.0		 1.8	0.001	0.001	# PLE
+0.001	0.45	0.001	9.0	2.0	2.0		 2.2	0.001	0.001	# PLE
+#0.001	0.75	0.001	19.0	3.0	3.0		 1.8	0.001	0.001	# LDDE
+0.001	0.75	0.001	13.5 3.0	3.0		 2.2	0.001	0.001	# LDDE
+

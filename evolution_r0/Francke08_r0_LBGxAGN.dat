@@ -1,0 +1,11 @@
+# z_lo	z  	z_hi  	 r0	   r0_plus  r0_minus	gamma	plus	minus
+#
+# Francke et al., 2008, ApJ, 673, L13
+# 58 redshift z~3 from the MUSYC (Multiwavelength Survey by Yale-Chile) and
+# centred on the ECDF-S. 
+#
+# The auto-correlation for the "luminous blue galaxies" (LBGs!) and LBG-AGN 
+# cross-correlation is worked out. Hence, only r0_LBG and r0_LBG-AGN
+# are given. 
+2.8	  3.23	3.8		6.7	0.5	0.5		1.80	0.001	0.001	# LBG
+2.8	  3.18	3.8		8.7	1.9	1.9		1.80	0.001	0.001	# LBG-AGN

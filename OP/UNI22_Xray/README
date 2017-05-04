@@ -1,0 +1,29 @@
+README
+-------
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/OP/UNI22_Xray/
+
+
+
+20080724
+--------
+Auto-correlation. 
+using the 2717 UNIFORM DR5Qs that were also detected by Anderson et al. (2007).
+
+I/P Files:
+-------
+open(1,file='../data/DR5QSO_uni_Xray_data.dat')
+open(2,file='../randoms/randoms_dat/randoms_npr_UNI_Xray.dat')
+
+
+
+
+20080903
+--------
+Cross-correlation. 
+using the 2717 UNIFORM DR5Qs that were also detected by Anderson et al. (2007).
+ie. xi_XQ = XQ / XR - 1
+
+open(1,file='../data/DR5QSO_uni_data.dat')
+open(2,file='../randoms/randoms_dat/randoms_npr_UNIFORM.dat')
+open(3,file='../data/DR5QSO_uni_Xray_data.dat')
+

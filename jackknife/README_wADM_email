@@ -1,0 +1,171 @@
+README file
+----------
+
+quasars/jackknife/ 
+
+
+
+jackknife_DR5Q_UNI22_xis.pro
+is the IDL program that calculates the (xi(s)) jackknifes. 
+
+
+
+
+Note.
+../OP/OP_20080508/k_output_UNI22_N.dat
+and
+../OP/OP_UNI22_jack_xis/k_output_UNI22_jack_S.dat
+are the same file with the top file having the naming
+convention since it was using the North data from the 
+UNI22 sample, while the bottom files have its name 
+from the fact it is the jackknife excluding the South
+region. 
+
+
+
+
+
+Date: Tue, 3 Jun 2008 12:43:41 -0500 
+From: Adam Myers <admyers@illinois.edu> 
+To: Nic Ross <npr@astro.psu.edu> Subject: 
+Re: Jackknife errors, big favour couple of notes
+
+Hi Nic,
+
+Good to hear from you....
+
+On Jun 3, 2008, at 10:24 AM, Nic Ross wrote:
+
+> Hi Adam,  How's it all going?  Just a reasonably quick email with a
+> couple of things, a big favour and some footbae chat at the end!
+> First, "shop".   As you may (or may not!) know I've been re-doing
+> and updating the SDSS Quasar 2-point correlation work for the
+> spectroscopic DR5 catalogue that was originally started by Andrew
+> Connolly a while back.   As such, I am at an intermediate stage,
+> having got a DR5 random catalogue and have been investigating xi(s),
+> wp(sigma) and the evolution of bias, in a v. similar way to Myers07,
+> Croom05 and Shen07 for the z>2.9 spectro sample.
+
+Don't forget Myers et al. 2006, 638, 622
+(http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2006ApJ...638..622M). I
+bring this up because I'm egotistical and like to remind people that I
+perfomred the first quasar clustering analysis in the SDSS.
+
+
+> As such, I was just about to start getting my hands dirty with the
+> jackknife analysis and was going over the literature. As such, I
+> noticed a couple of "subilties" that I'd appreciate your input on.
+> First is the slightly different definitions of the Covariance,
+> Cov_ij, given in Myers et al., 2005 (MNRAS, 359, 741), equation 7
+> and that given in Myers et al., 2007 (ApJ, 658, 85), equation A2.
+> In the former, w_bar is used, ie the *mean* of the subsamples, while
+> in the latter, w is used, i.e. the CF for the whole dataset.  Which
+> do you think is "correct"??
+
+
+Both are technically correct.....  the former is referring to an
+average over random realizations (i.e. the variant is the  background
+random distribution) and therefore the mean is over the realizations.
+The latter is an average over different areas of the sky (i.e. the
+variant is the data  distribution) and thus the average is over the
+entire sky (i.e. the CF for the whole  dataset). Thus, as I suspect
+you're using data as the variant,  Myers et al. 2007 (ApJ, 658, 85),
+equation A2 (which technically first appeared in the literature in
+Myers et al. 2005, 359, 741,
+http://adsabs.harvard.edu/cgi-bin/nph-bib_query?2005MNRAS.359..741,
+equation 5),  is the correct equation.
+
+> Also, does the 1/N (Myers05) vs. RR_L/RR (M07) weighting offset this
+> "mean" vs. "whole" issue, or is there something else going on here?!
+
+Nothing to do with the "mean" versus "whole". Something else entirely.
+The inclusion of the RR_L/RR terms introduces an extra (N-1)/N, so you
+don't  need one out front. Easiest way to picture this is to look at
+Scranton et al., 2002, ApJ, 579, 48
+(http://adsabs.harvard.edu/abs/2002ApJ...579...48S) equation 10 for
+the *unweighted* jackknife
+
+error**2  = (N-1)/N sum (w_L -w)**2
+
+and compare to my equation for the weighted jackknife
+
+error**2  = sum (RR_L/RR)*(w_L -w)**2
+
+The difference between Scranton's equation and my equation arises
+because Scranton  divided the sky into N areas of equal fractional
+weight N-1 (in other words, say you divide the sky into 5 areas....in
+each jackknife realization you will consider the  data in the other
+four areas and thus RR_L/RR = 0.8 = 4/5). Thus in the unweighted
+jackknife, each instance of RR_L/RR carries an equal weight of (N-1)/N
+and you can take the term outside of the summation.  (Note that the
+real reason that the N-1 term is there in Scranton's equation in the
+first place is because w_L has a higher variance than w).
+
+The point of my weighted jackknife is that RR_L/RR do not carry equal
+weight (and should not, because of, e.g., the survey geometry) and
+hence you can't take the (N-1)/N outside of the summation. It's
+implicit in the RR_L/RR terms though. You can see that by, say,
+assuming that you divide the sky into three areas, one that ends up
+containing 80% of the data and two that end up containing 10% each of
+the data, then the weights of the terms would be
+
+error**2  = sum (RR_L/RR)*(w_L -w)**2 = [(1-0.1)/3]*(w_L -w)**2 +
+[(1-0.1)/3]*(w_L -w)**2 + [(1-0.8)/3]*(w_L -w)**2 = (0.9/3)*(w_L
+-w)**2 + (0.9/3)*(w_L -w)**2 + (0.2/3)*(w_L -w)**2.
+
+If w_L-w were equal in all cases. This would be
+2/3(w_L-w)**2. (i.e. (N-1)/N out front)
+
+> (I know this is a real pain, since as I'm sure you can appreciate, I
+> had a certain Durham Professor hounding me and Phil and Jose about
+> this for ~4 years!!! ;-)
+
+Yeah, I think Jose got this wrong initially in his last paper until I
+corrected him. Tom's usually very, very sharp on statistics though, so
+I'd be surprised if he wasn't right practically 100% of the time.
+
+> The second bit of shop is a BIG favour.  I was assuming you plotted
+> Fig 9 of Myers07 with IDL.  If that was the case, would to give me a
+> couple of pointers to what e.g. routines you used
+> (e.g. "contour"??!) to make this nice plot, as I would suspect I'll
+> be v. keen to do something similar. I *don't* need JK code per se
+> (that I've written myself) just an idea how to get the e.g. nice
+> colour scheme and log bar would be really really appreciated.
+
+My code's written in Python using biggles
+(http://biggles.sourceforge.net/). If you're willing to install
+biggles (I assume you have Python). I'm happy to send you my
+code. It's pretty neat....you can play around with funky color schemes
+very easily. Anyway, it's yours if you want it.
+
+> Third thing is just to let you know I've signed up for the SDSS
+> symposium at the Kavli in Chicago, Augsust 15-18th.  So, if you were
+> around then too, a beer would be much welcome!
+
+Technically I'm external to SDSS (which has been a right pain) so I
+probably won't be at the meeting (I work about 3 hours south of
+Chicago). If I'm there we can definitely meet up, though.
+
+> Finally, footbae!  I saw Chivas were playing FC Barcelona in Chicago
+> on Aug 6th.  Would this be something you were interested at all in??
+> I'm a Red Bulls man myself, so might go to NYC where Barca are also
+> stopping off, but thought I'd just mention it!
+
+Sure, I'd absolutely be up for this Aug 3rd. Don't know if it's easy
+for you logistically, though. I don't have accommodation in Chicago,
+like I said, so a night of hotel would probably be involved, unless
+you drove and went via my place (which is an extra 3 hours on a 9 hour
+drive!). But we could definitely arrange something, I would think.
+
+> So, King Kev *did* save you from the dropb, but if half your players
+> are in jail, or back off home (Emre) what's next season looking
+> like!! ;-)
+
+I was never worried about the drop! I think I said as much. Emre
+hardly played last season, and N'Zogbia and Milner would be my first
+pick "creative midfielders" anyway. So, not too sad there. If we sell
+Milner or Zog I'll be pissed off though....most footie teams need at
+least one player in midfield to be successful.
+> Thanks as usual,
+No problem, I'm always happy to help out. Plus I always use you on my
+CV as "successful undergraduates I have supervised (!)"

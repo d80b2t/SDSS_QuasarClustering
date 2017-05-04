@@ -1,0 +1,72 @@
+R E A D M E
+-----------
+
+http://www.astro.psu.edu/users/npr/DR5Q/
+
+[and $cos/programs/quasars/jackknife/wp_sigma]
+
+
+PLOTS
+--------
+	wpsigma_DR5_quasars_jackknifes_20080729.pdf
+shows wp(sigma) for the full SDSS DR5Q Uniform sample (diamonds)
+and the 21 jackknife estimates. 
+
+    wpsigma_DR5_quasars_jackknife_errs_20080729.pdf
+shows wp(sigma) for the full SDSS DR5Q Uniform sample (filled circles)
+with both Poisson (dotted line) and Jackknife (solid, green) lines shown. 
+The botton panel is the ratio of the Jackknife:Poission errors. 
+
+    wpsigma_DR5_quasars_Poisson_vs_JK_errs_20080729.pdf
+is just this bottom panel full size and is what was used for the scaling
+of the evolution subsamples. 
+
+    wp_sigma_div_sigma_DR5_quasars_3by4_for_evol_20090213.pdf	
+is wp(rp)/rp for the redshift slices with the 'old', "geometric mean" 
+Poisson:Jackknife scaling for the errorbars (i.e. x5 at rp<10 h^-1 Mpc 
+and x45 at rp>10 h^-1 Mpc) in dashed green and the double checked
+errorbar scaling as solid black lines. 
+
+
+JACKKNIFES FOR 1.32<z<1.50
+-----------------------------
+There were 21 (twenty-one) jackknife areas, N01-N20 and S. 
+Here we calculate the xi(sigma,pi) and wp(rp) values for these
+jackknifes for one redshift interval, the median interval of our
+analysis, 1.32<z<1.50.
+
+
+xi(s)
+--------------
+Output files for the xi(s) redshift slices are found in the xis_redshift_slices/ and are called: 
+       	k_output_UNI22_*.dat
+Columns are:
+  log(s),   s,   xi(s)_Std, Poisson error,    DD,   DR,   RR,  xi(s)_Ham, xi(s)_LS 
+
+
+
+xi(sigma,pi)
+------------
+Output files for the xi(sigma, pi) are found in the xi_sigma_pi/ directory and called 
+  k2d_output_UNI22_1pnt32z1pnt50_jack_*
+and the columns are:
+
+sigma, pi,  k_sigma, k_pi, xi_Std,  Poisson_error, DD_pairs, DR_pairs, RR_pairs, Xi_Ham, Xi_LS
+
+Note, xi_Std, Poisson_error and xi_Ham set to -1 when DD=0 but DR and RR are non-zero.
+
+
+
+wp(sigma)
+-----------
+The wp(sigma) calculated from the above xi(sigma,pi) with a pi_cut set at 63 h^1 Mpc. 
+Output files for the wp(sigma) are found in the wp_sigma/ directory and called 
+   K_wp_output_UNI22_1pnt32z1pnt50_jack
+
+sigma, log_sigma, xi, Poisson_error, DD, DR, xi_Ham, xi_LS
+
+
+
+Nic Ross
+npr@astro.psu.edu
+13 Feb 2009

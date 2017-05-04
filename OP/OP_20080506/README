@@ -1,0 +1,13 @@
+These files *N_20080506* were a North follow-up to the first attempt to get the 2PCF 
+using a nice and uniformly distributed random catalouge: 
+
+randoms_npr_PRIMARY_20080502.dat
+and 
+DR5QSO_pri_data_20080502.dat 
+cutting at 0.30<z<2.2. 
+
+However, the mrdfits command when converting the ra,dec random file from:
+/Volumes/Bulk/npr/cos_pc19a_npr/data/Quasars/CAS/mask/ra_dec_eta_lambda_randoms_20080502
+did something weird on reading in the file (unit numbers etc.) so the outcome was disappointly simlar to OP_20080427 and heavily weighted towards 20080504 (though I never seriously checked this latter point). 
+
+However, this was (begun to get)  rectified in *20080507*. 

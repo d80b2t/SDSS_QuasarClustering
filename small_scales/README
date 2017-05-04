@@ -1,0 +1,16 @@
+
+
+Recall, 
+open(2, file="../../../data/Quasars/CAS/PhotoObjAll_PrimQSOs_npr.dat") 
+is from ab SQL query on DR5:	
+
+SELECT ra, dec into mydb.MyTable from PhotoObjAll
+WHERE ((primTarget & 0x0000001f) > 0)
+202958
+
+The (0x1f = 31) tag selects targets that have the following flags set:
+
+
+
+
+

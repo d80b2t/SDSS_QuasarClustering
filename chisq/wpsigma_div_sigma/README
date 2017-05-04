@@ -1,0 +1,28 @@
+R E A D M E
+----------
+
+README file for quasars/chisq/wpsigma_div_sigma 
+-----------------------------------------
+
+In this directory there are files for taking the wp(rp)/rp
+data and fitting (single) power-laws in order to find r0/gamma
+for the e.g. redshift subsample slices. 
+
+Note, there are two files. 
+
+r0_from_wpsigma_div_sigma_DR5Q
+basically holds gamma=2.0 fixed. 
+
+where as r0_gamma_from_wpsigma_div_sigma_DR5Q
+varies r0 and gamma (and as such calculates values
+for "A(gamma)" on the fly. 
+
+
+Running delta_chisq.pro  is a quick way to pick out
+the r0 value which has the minimum chi^2 and the associated
+(1 sigma) error. 
+
+
+
+npr 
+21 feb 2009

@@ -1,0 +1,45 @@
+README 
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/evolution_bias/Hopkins07
+
+
+
+Hi Nic,
+
+ Thanks for the email, glad to he a help. Took me a bit to dig into my old routines and find what you needed, but I think I've got it. Attached
+are three files, corresponding to the three panels in Fig. 13 of Hopkins et al. (2007). Each one is a different (relatively simple toy) model for
+the clustering evolution. The one labeled "default" corresponds to the middle panel of the figure ('QSOs Grow Uniformly...'), and what I think is
+most likely (the models of fueling from a more a priori standpoint tend to agree with it best). But theres also 'extreme_feedback' corresponding
+to the left panel of that Fig. 13 and 'maximal' corresponding to the right panel (all described in the paper, but let me know if youve got
+specific questions). For each file, there are five columns:
+(1) redshift
+(2) bias of a 'typical' L* quasar, for the given model (since, in the model, the clustering does not depend strongly on quasar L below L*, this
+is also equivalent to calculating the bias of an effectively infinitely deep sample)
+(3) bias for the same sample, but with a magnitude-limited sample limited at i=22.0 (described in the text of the paper: we consider a sample
+limited by a given apparent i-band magnitude).
+(4) as column (3), but for a magnitude limit i=20.2
+(5) as column (3), but for a magnitude limit i=19.0
+
+The magnitude-limited cases rapidly start to run to extreme bias at high z, b/c in such a sample you would only see the most luminous quasars
+corresponding to the most massive halos. Now, in practice, once the bias values get very large at these redshifts (b>~10, roughly), they are
+*extremely* sensitive to the exact halo masses -- so don't take the exact bias predicted too literally (a very small change in the median or
+scatter in halo mass-qso luminosity can affect them by a lot.. but regardless, the bias will still be very large).
+
+Hope that helps, I'm definitely interested in seeing what you come up with as it develops.
+- Phil
+
+
+
+    [ Part 2, Application/OCTET-STREAM (Name: "h07_clstr_default.dat")  4.3KB. ]
+    [ Not Shown. Use the "V" command to view or save this part. ]
+
+
+    [ Part 3, Application/OCTET-STREAM (Name: "h07_clstr_extreme_feedback.dat")  4.3KB. ]
+    [ Not Shown. Use the "V" command to view or save this part. ]
+
+
+    [ Part 4, Application/OCTET-STREAM (Name: "h07_clstr_maximal.dat")  4.3KB. ]
+    [ Not Shown. Use the "V" command to view or save this part. ]
+
+
+    [ Part 5: "Attached Text" ]
+

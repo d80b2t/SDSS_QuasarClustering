@@ -1,0 +1,20 @@
+README
+
+The original, *20080121_0pnt30z0pnt68*, files had rho_randoms set to x20 datas, with
+an unknown pi_cut at this point (suspected to be .le. 19 =>39 h^1 Mpc). 
+YUP!!
+cf.	 20080121_0pnt30z0pnt68 
+	 			with 
+    K_wp_output_0pnt30z0pnt68_rho20picut19.
+
+The *UNI22_0pnt30z0pnt68* files have rho_randoms set to x~30 datas (what ever the 
+redshift cuts do to the 1e6 strong random file) and pi_cut .le. 20 ->63 h^-1 Mpc
+
+The rho20picut20 files have (as their name suggests!), randoms at x20 the datas and
+pi_cut at .le. 20, which means looking at the
+       wp_sigma_DR5_quasars_0pnt30z0pnt68_comps.ps 
+plot, the 20080121_0pnt30z0pnt68 files, really probably don't have k_picut at 20.
+
+Thus we have similar xi(s)'s for all the files, but (pretty) different wp(sigmas).
+
+

@@ -1,0 +1,14 @@
+
+ 	has UNIFORM 0.00 < z < 0.30 
+ 	has UNIFORM 0.30 < z < 0.68 
+     	has UNIFORM 2.25 < z < 2.90
+ 	has UNIFORM 0.68 < z < 0.92
+   	has UNIFORM 0.92 < z < 1.13
+ 	has UNIFORM 1.13 < z < 1.32 
+	has UNIFORM 1.32 < z < 1.50
+	has UNIFORM 1.50 < z < 1.66
+	has UNIFORM 1.66 < z < 1.83
+	has UNIFORM 1.83 < z < 2.02
+	has UNIFORM 2.02 < z < 2.20
+	has UNIFORM 2.20 < z < 2.90
+

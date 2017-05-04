@@ -1,0 +1,25 @@
+README file
+----------
+
+quasars/jackknife/ 
+
+
+
+jackknife_DR5Q_UNI22_xis.pro
+is the IDL program that calculates the (xi(s)) jackknifes. 
+
+
+
+
+Note.
+../OP/OP_20080508/k_output_UNI22_N.dat
+and
+../OP/OP_UNI22_jack_xis/k_output_UNI22_jack_S.dat
+are the same file with the top file having the naming
+convention since it was using the North data from the 
+UNI22 sample, while the bottom files have its name 
+from the fact it is the jackknife excluding the South
+region. 
+
+
+Using  e.g. Myers et al., 2007 (ApJ, 658, 85), equation A2.

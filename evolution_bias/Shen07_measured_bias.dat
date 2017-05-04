@@ -1,0 +1,8 @@
+# Shen et al. (2007), ApJ, 133, 2222
+# The bias values below are derived from measured xi(s)_20 figures given 
+# in Section 3.3 (p. 2231, end of 2nd column) and then using the exponential
+# fit to xis_20_mass I found from fitting to the Smith et al. (2003) model. 
+#
+# z_lo_Shen07, z_bar_Shen07, z_hi_Shen07, bias_Shen07, err_bias_Shen07
+2.9 3.17205 3.5		6.76948  1.03
+3.5 3.956     5.338		10.4688  1.38 

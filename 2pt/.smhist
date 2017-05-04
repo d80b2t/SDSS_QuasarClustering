@@ -1,0 +1,69 @@
+macro read z_distrib.sm
+DR5Q
+DR5Q_UNI22
+quit
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_UNI22
+echo data
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_UNI22
+echo sum(quasars)
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_UNI22
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_UNI22
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_UNI22
+quit
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_UNI22
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_UNI22
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_UNI22
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_UNI22
+macro read z_distrib.sm
+DR5Q
+macro read z_distrib.sm
+DR5Q_S_UNI22
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_UNI22
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_UNI22
+DEVICE postfile Nofz_DR5Q_UNI22_SGC.ps
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_UNI22
+quit
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_PRI22
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_PRI22
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_PRI22
+macro read z_distrib.sm
+DR5Q
+DR5Q_S_PRI22
+quit
+macro read z_distrib.sm
+DR5Q
+DR5Q_PRI22_SinglePlate
+macro read z_distrib.sm
+DR5Q
+DR5Q_PRI22_SinglePlate
+quit

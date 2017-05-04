@@ -1,0 +1,32 @@
+# z_lo	z  	z_hi  	 r0	   r0_plus  r0_minus	gamma	plus	minus
+#
+# Gilli et al., 2005, A&A, 430, 811
+# Table 2, "AGN" rows from CDF S&N. h=100.
+0.001	0.84 0.001	 10.3   1.7	1.7			1.33		0.14	0.14
+0.001 	0.96 0.001   	 5.5     0.6   	0.6			1.50		0.12	0.12
+#
+# Gilli 08 data, XMM-COSMOS, using "550 AGN"
+# Ref: THE X-RAY UNIVERSE 2008 conference, XMM-Newton SOC, 27-30 May 2008
+# Granada, Spain, xru2008-abstractbook_v1.4.pdf
+0.001 1.00 0.001	   8.3    0.4	1.89	   0.07
+#
+# Miyaji et al., 2007, ApJS, 172, 396
+# The three values are from the 
+#  0.2-2.0 (SFT),  2.0-4.5 (MED) and 4.5-10 keV (UHD) bands respectively
+# using the "FitID" S6,M6,U6, which have an IC applied. h=100
+0.001	    1.07       0.001  	 11.8	1.1	1.1		1.8	0.01	0.01  
+0.001	    0.87       0.001  	 6.9		2.2	3.1		1.8	0.01	0.01  
+0.001	    0.60       0.001  	 12.7	2.3	2.7		1.8	0.01	0.01  
+#
+# Yang et al., 2006, ApJ, 645, 68
+# CDF-N and CLASXS. 
+# h=71 (quoted) 
+#0.001	     1.50	0.001		5.8		1.0	1.5		1.38	0.12 0.14		#CDF-N cf. Gilli05
+#0.001	     1.50	0.001		8.1		1.2	2.2		2.1   0.5  	0.5		# CLASXS
+#0.001	     1.50	0.001		6.1		0.4	1.0		1.47 0.07	0.10		# CLASXS+CDF-N
+# h=100 (transformed) (e.g. x h^-1 Mpc = 5.8 Mpc  =>   x = 4.12 h^-1 Mpc)
+0.001	     1.50	0.001		4.1		0.7	1.1		1.38	0.12 0.14		#CDF-N cf. Gilli05
+0.001	     1.50	0.001		5.8		0.9	1.6		2.1   0.5  	0.5		# CLASXS
+0.001	     1.50	0.001		4.3		0.3	0.7		1.47 0.07	0.10		# CLASXS+CDF-N
+
+

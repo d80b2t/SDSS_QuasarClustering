@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>highz_qso_clustering</title>
+</head><body>
+<p><font face="Times New Roman, Times, serif"><em>Supplemental materials of</em></font><font face="Times New Roman, Times, serif" size="+2"><strong> 
+  <br>
+  Clustering of High Redshift ($z\ge 2.9$) Quasars from the Sloan Digital Sky 
+  Survey<br>
+  </strong></font><font face="Times New Roman, Times, serif"><a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/ms_astroph.ps.gz" target="_blank"><strong>high-resolution 
+  paper</strong></a></font><font face="Times New Roman, Times, serif" size="+2"><strong> 
+  </strong></font><font face="Times New Roman, Times, serif"><a href="http://www.arxiv.org/abs/astro-ph/0702214" target="_blank"><strong> 
+  astro-ph</strong></a></font><font face="Times New Roman, Times, serif" size="+2"><strong> 
+  </strong></font><font face="Times New Roman, Times, serif"><strong><a href="http://www.sdss.org/news/releases/20070209.quasar.html">Press 
+  Release</a></strong></font> </p>
+<p><font face="Times New Roman, Times, serif"><em>last updated: Feb 2007 by Yue 
+  Shen </em></font></p>
+<hr>
+<p><font size="+1"><strong><font face="Times New Roman, Times, serif" size="+2">Tables 
+  and Figures</font></strong></font></p>
+<p><font face="Times New Roman, Times, serif"> <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/datafile1.txt"><strong>datafile1.txt</strong></a> 
+  : the entile Table 1 in the paper.<br>
+  <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/fb1.eps"><strong>fb1.eps</strong></a> : Fig. B1 of the paper; the illustrative 
+  figure for the SDSS tiling geometry.</font></p>
+<hr>
+<p><font face="Times New Roman, Times, serif" size="+2"><strong>Geometry</strong></font></p>
+<p><font face="Times New Roman, Times, serif">The angular geometry description 
+  of the quasar clustering subsamle can be found in Appendix B of the paper. Files 
+  necessary to generate the masks are present here in fits format. You need to 
+  install the<em><a href="http://spectro.princeton.edu/idlspec2d_install.html" target="_blank"> 
+  <strong>idlutils</strong></a></em><a href="http://spectro.princeton.edu/idlspec2d_install.html"> 
+  </a>and<em> <a href="http://spectro.princeton.edu/idlspec2d_install.html" target="_blank"><strong>idlspec2d</strong></a></em> 
+  products first. Use the <a href="http://spectro.astro.princeton.edu/idlutils_doc.html#READ_FITS_POLYGONS" target="_blank"><strong><font face="Arial, Helvetica, sans-serif">READ_FITS_POLYGONS</font></strong></a> 
+  routine in <em>idlutils</em> to read these fits files.</font></p>
+<p><font face="Times New Roman, Times, serif">The first two files are enough for 
+  your purpose of generating random catalogs in the same regions as the clustering 
+  subsample with or without bad imaging fields. The other three files are useful 
+  if you want to plot the targeting and tiling geometry as shown in Fig. B1 of 
+  the paper. Note that for the highz_spectro_window.fits file, the starting plate 
+  is 0716, because prior plates were associated with tiling chunks with targeting 
+  version lower than v3_1_0. However, a later plate number doesn't guarantee the 
+  plate is necessarily tiled in a tiling chunk with targeting version no lower 
+  than v3_1_0. In other words, you need to use both <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/tilingChunks.fits"><strong><font face="Arial, Helvetica, sans-serif">tilingChunks.fits</font></strong></a><font face="Arial, Helvetica, sans-serif"> 
+  </font> (with targeting version incorporated) and <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/highz_spectro_window.fits"><strong><font face="Arial, Helvetica, sans-serif">highz_spectro_window.fits</font></strong></a> 
+  to reject lower target version regions.</font><font face="Times New Roman, Times, serif"><a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/full_sectors.fits"><br>
+  <br>
+  <strong><font face="Arial, Helvetica, sans-serif">full_sectors.fits</font></strong></a><font face="Arial, Helvetica, sans-serif"> 
+  : <font face="Times New Roman, Times, serif">the set of balkanized spherical 
+  polygons describing the geometry of the clustering subsample. Note that here 
+  "balkanization" is only done within each tiling chunks (tileRun). Since different 
+  tiling chunks could overlap with each other (see the examples in Fig. B1 of 
+  the paper), you need to do "balkanization" again to get the fully "balknized" 
+  sectors, and to get the total net area covered by these sectors. Such a file 
+  is provided as <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/full_sectors_balkans.fits"><font face="Arial, Helvetica, sans-serif"><strong>full_sectors_balkans.fits</strong></font></a>, 
+  where the tiling chunk and plate info is gone. </font><br>
+  <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/bad_fields_balkans_unified.fits"><strong>bad_fields_balkans.fits</strong></a> 
+  <font face="Times New Roman, Times, serif">: a secondary mask describing the 
+  regions of bad imaging fields. </font><br>
+  <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/targetingChunks.fits"><strong>targetingChunks.fits</strong></a> <font face="Times New Roman, Times, serif">: 
+  the set of polygons describing the geometry of target chunks.</font><br>
+  <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/tilingChunks.fits"><strong>tilingChunks.fits</strong></a> <font face="Times New Roman, Times, serif">: 
+  the set of polygons describing the geometry of tiling chunks</font></font></font><font face="Times New Roman, Times, serif">.</font><font face="Arial, Helvetica, sans-serif"><br>
+  <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/highz_spectro_window.fits"><strong>highz_spectro_window.fits</strong></a> 
+  <font face="Times New Roman, Times, serif">: the set of polygons describing 
+  the geometry of spectroscopic plates (tiles) starting from plate 0716.</font></font></p>
+<p><font face="Times New Roman, Times, serif"><strong><font size="+1">How to determine 
+  whether or not a given point (xyz or RA/DEC) is in regions described by the 
+  set of polygons?</font></strong></font><font face="Times New Roman, Times, serif"><br>
+  Use routine<font face="Arial, Helvetica, sans-serif"> <a href="http://spectro.astro.princeton.edu/idlutils_doc.html#IS_IN_WINDOW" target="_blank"><strong>IS_IN_WINDOW</strong></a></font> 
+  in <em>idlutils</em>.</font></p>
+<p><font face="Times New Roman, Times, serif">I also put the original files describing 
+  the boundaries of the targeting chunks and tiling chunks below (these files 
+  can also be obtained from <a href="http://cas.sdss.org/dr5/en/" target="_blank"><strong>CAS</strong></a> 
+  and/or <a href="http://www.sdss.org/dr5/coverage/index.html" target="_blank"><strong>DR5 
+  site</strong></a>). There files are necessary if you want to generate the above 
+  fits files by yourself.</font><font face="Times New Roman, Times, serif"><br>
+  <br>
+  <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/tilingBoundaries"><strong><font face="Arial, Helvetica, sans-serif">tilingBoundaries</font></strong></a> 
+  : table describing the boundaries of tiling chunks; its parent view is <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/tilingGeometry"><strong><font face="Arial, Helvetica, sans-serif">tilingGeometry</font></strong></a>. 
+  <font face="Arial, Helvetica, sans-serif"><br>
+  <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/targetingChunk"><strong>targetingChunk</strong></a> : <font face="Times New Roman, Times, serif">file 
+  describing the boundaries of targeting chunks (never used in generating <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/full_sectors.fits"><strong><font face="Arial, Helvetica, sans-serif">full_sectors.fits</font></strong></a>, 
+  but is of general SDSS geometry interests). </font><br>
+  <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/maindr5spectro.par"><strong>maindr5spectro.par</strong></a> <font face="Times New Roman, Times, serif">: 
+  file describing the geometry of spectroscopic plates.</font><br>
+  <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/runQA_DR5.csv"><strong>runQA_DR5.csv</strong></a> (<strong>46M!!</strong>)<font face="Times New Roman, Times, serif">: 
+  file describing detailed SDSS run quality, used to identify bad imaging fields. 
+  After identifying bad imaging fields, you need to use the <a href="http://photo.astro.princeton.edu/photoop_doc.html#SDSS_RUN2WINDOW" target="_blank"><strong><font face="Arial, Helvetica, sans-serif">SDSS_RUN2WINDOW</font></strong></a> 
+  routine in the SDSS <em>photoop</em> product. (Yes, you have to <a href="http://photo.astro.princeton.edu/#tools" target="_blank"><strong><em>install 
+  photoop</em></strong></a> product to use sdss_run2window and related routines).</font></font></font></p>
+<p><font face="Times New Roman, Times, serif">The SDSS tiling geometry is rather 
+  complicated, please refer to the description in Appendix B of the paper for 
+  more information. If you REALLY want to play with spherical polygons for SDSS, 
+  you may want to check the <a href="http://www.sdss.org/dr5/glossary/index.html" target="_blank"><strong>SDSS 
+  glossary</strong></a> for some jargons and especially different coordinate systems 
+  that will <strong>ALL</strong> be used in those geometry tables (you will find 
+  even mixed types of coordinate systems!); a description of the <em>mangle</em> 
+  product by A. Hamilton can be found <a href="http://casa.colorado.edu/%7Eajsh/mangle/" target="_blank"><strong>here</strong></a>. 
+  In the future, the <a href="http://cas.sdss.org/dr5/en/"><strong>CAS</strong></a> 
+  will probably incorporate all the necessary gemoetry information into tables 
+  and provide a user guide to utilize these tables.</font></p>
+<hr>
+<p><font face="Times New Roman, Times, serif" size="+2"><strong>Constraint on 
+  Quasar Lifetime</strong></font></p>
+<p><font face="Times New Roman, Times, serif">We have used the Jing (1998) analytical 
+  formula to compute the linear bias. In principle one can use the bias computed 
+  from numerical simulation results. However, to interpret our measured correlation 
+  function we need a fine redshift grid. Hence using the analytical bias formula 
+  is convenient. We have compared the analytical formula with that computed from 
+  numerical simulations at two redshifts: z=3 and z=4; and the analytical bias 
+  formula is a proper prescription for our integrated correlation function (see 
+  Appendix C of the paper for more discussions). Also, we compared the Press-Schechter 
+  formula and the Sheth-Tormen formula for the halo mass function with numerical 
+  simulation at z=3 and z=4. It is found that the ST formula is a better prescription 
+  for the dark matter halo mass function. The numerical simulations we used were 
+  kindly provided by Paul Bode &amp; J. P. Ostriker, and the related figures are 
+  not included in the paper. </font></p>
+<p><font face="Arial, Helvetica, sans-serif"><a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/HMF_compare_z3.eps"><strong>HMF_compare_z3.eps</strong></a><font face="Times New Roman, Times, serif"> 
+  : halo mass function at z=3 (y axis units should be h^4 Mpc^{-3} M_{\odot}^{-1})</font><br>
+  <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/HMF_compare_z4.eps"><strong>HMF_compare_z4.eps</strong></a> <font face="Times New Roman, Times, serif">: 
+  halo mass function at z=4 (y axis units should be h^4 Mpc^{-3} M_{\odot}^{-1})</font><br>
+  <a href="http://www.astro.princeton.edu/%7Eyshen/highz_qso_clustering/comp_halo_mass_CF_Paul_z3_z4.eps"><strong>comp_halo_mass_CF_Paul_z3_z4.eps</strong></a><font face="Times New Roman, Times, serif"> 
+  : comparsion of the DM CF and halo (M&gt;2e12 h^{-1} M_{\odot}) CF with results 
+  computed using analytical CDM power spectrum and linear bias formula.</font></font></p>
+</body></html>

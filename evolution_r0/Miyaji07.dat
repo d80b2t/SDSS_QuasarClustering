@@ -1,0 +1,9 @@
+# z_lo	z  	z_hi  	 r0	   r0_plus  r0_minus	gamma	plus	minus
+#
+# Miyaji et al., 2007, ApJS, 172, 396
+# The three values are from the 
+#  0.2-2.0 (SFT),  2.0-4.5 (MED) and 4.5-10 keV (UHD) bands respectively
+# using the "FitID" S6,M6,U6, which have an IC applied. h=100
+0.001	    1.07       0.001  	 11.8	1.1	1.1		1.8	0.01	0.01  
+0.001	    0.87       0.001  	 6.9		2.2	3.1		1.8	0.01	0.01  
+0.001	    0.60       0.001  	 12.7	2.3	2.7		1.8	0.01	0.01  

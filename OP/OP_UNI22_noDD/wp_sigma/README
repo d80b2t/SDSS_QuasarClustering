@@ -1,0 +1,17 @@
+R E A D M E
+-------------
+
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/OP/OP_UNI22_noDD/wp_sigma > 
+
+
+All with pi_max =   63 h^1 Mpc i.e.
+    if(k_pi_para .le. 20) then 
+in quorrel_five_perl.f90 unless stated otherwise. 
+
+K_wp_output_UNI22_0pnt68z0pnt92.dat 
+is the wp(sigma) file, for 0.68<z<0pt92, *with* DDs. 
+(i.e. found in OP/UNI22_evol_5logbins_wpsigma).
+
+
+npr
+11 feb 2009

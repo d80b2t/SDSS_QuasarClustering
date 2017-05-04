@@ -1,0 +1,17 @@
+These O/P files were from the SDSS DR5 Quasar correlation function `run' I left going
+while I went to Australia/LBNL. 
+
+q_omega_rs_v1_25.pro
+was used but crashed just before the final write-outs, using the finer-binned, 2D 
+xi(sigma,pi) calculations. 
+
+However, all the pair counting was done and so 
+xi(s),         using kde_output_temp_20071102.dat, 
+wp(sigma) using Kde_wp_sigma_output_temp_20071102.dat, 
+and 
+xi(sigma,pi) using kde_2d_output_tempf_20071102.dat
+should all be fine. 
+
+
+npr
+20 nov 2007

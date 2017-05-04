@@ -1,0 +1,57 @@
+README 
+for /Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/OP/OP_UNI22_jack_xis/ 
+
+
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/OP/OP_UNI22_jack_xis > wc k_output_*
+      39     390    6786 k_output_UNI22_jack_N1.dat
+      39     390    6786 k_output_UNI22_jack_N10.dat
+      39     390    6786 k_output_UNI22_jack_N11.dat
+      39     390    6786 k_output_UNI22_jack_N12.dat
+      39     390    6786 k_output_UNI22_jack_N13.dat
+      38     380    6612 k_output_UNI22_jack_N14.dat
+      39     390    6786 k_output_UNI22_jack_N15.dat
+      39     390    6786 k_output_UNI22_jack_N16.dat
+      39     390    6786 k_output_UNI22_jack_N17.dat
+      39     390    6786 k_output_UNI22_jack_N18.dat
+      39     390    6786 k_output_UNI22_jack_N19.dat
+      39     390    6786 k_output_UNI22_jack_N2.dat
+      39     390    6786 k_output_UNI22_jack_N20.dat
+      39     390    6786 k_output_UNI22_jack_N3.dat
+      38     380    6612 k_output_UNI22_jack_N4.dat
+      39     390    6786 k_output_UNI22_jack_N5.dat
+      39     390    6786 k_output_UNI22_jack_N6.dat
+      39     390    6786 k_output_UNI22_jack_N7.dat
+      39     390    6786 k_output_UNI22_jack_N8.dat
+      39     390    6786 k_output_UNI22_jack_N9.dat
+      38     380    6612 k_output_UNI22_jack_S.dat
+wc: k_output_lin_UNI22_jack: read: Is a directory
+     816    8160  141984 total
+
+Okay, so to get jackknife_DR5Q_UNI22_xis.pro running in ../programs/quasars/jackknifes/, have added a line to each of:
+k_output_UNI22_jack_N4.dat             (the (log_s,s) = (0.25, 1.778279) row
+k_output_UNI22_jack_N14.dat	   (the (log_s,s) = (0.15, 1.412538) row
+k_output_UNI22_jack_S.dat	   	   (the (log_s,s) = (3.95, 8912.5107 ) row
+
+(N4 and N14 are obviously the regions that had the small (<2 h^-1 Mpc) separation
+pair of quasars in them for 1.77 and 1.41 bins respectively.) 
+
+The extra line data is taken from the full UNI22 file, found in:
+../OP/OP_20080508/k_output_UNI22.dat
+
+BUT!!!
+Ahhh, but this really doens't work since you want to know about the *differences*
+between the subsamples and the full data. Therefore, not having DDs somewhere
+is telling you something!!!
+
+Using the definintion of the LS xi(s) estimator, I reckon, if there is no data but
+there are randoms, then xi(s)=1. 
+Thus in N4 and N14, I have changed this (have also made the RRs a "mean RR" for
+the relevant separation). 
+
+The log_s=3.95 point in the S subsample is (currently) at too large a scale for me 
+to care about... 
+(though should again be a case of there being no DDs at this separation??)
+
+
+
+

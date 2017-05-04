@@ -1,0 +1,20 @@
+README
+
+OP_20080510 has files using `uniform' randoms from 
+
+open(1,file='../data/DR5QSO_pri_data_20080508.dat')
+open(2,file='../randoms/randoms_npr_PRIMARY_20080508.dat')
+
+
+20080510.dat is the full, 44,348 (or is it 44,345??!) data strong sample. 
+N_20080511* has the NCG, 38,684 (even though it was only created on the 20080516...)
+S_20080511* has the SCG, 5661
+
+
+Also in this directory are the results taken up Dan VBs suggestion of only looking at 
+data in single plates (in case there were any issues with e.g. getting objects on
+a second pass within an overlap region). 
+
+These results are given the obvious names of: SinglePlate and MultiplePlate respectively.
+(They use the same data/randoms as above, just filtered with Single_Plate_filter.pro
+in the ../data/Quasars/CAS/mask/ directory). 

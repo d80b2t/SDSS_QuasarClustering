@@ -1,0 +1,54 @@
+#linear bias	 plus  minus	redshift	zmin	zmax	Type	Survey	Reference Comments^{2}
+1.66		      	 0.35  0.35   	 0.55	0.40		0.80		LRG    	2SLAQ	Ross07
+1.90			 0.08  0.08	 0.55	0.40		0.80		LRG  	2SLAQ	Ross08	
+2.35			 0.22  0.22	 0.68	0.50		0.90		LRG		AAOmega Ross08	
+#
+3.27			 0.46  0.47	 1.58	1.0		2.5		pBzK	MUSYC	Blanc0803.0763v2
+2.93			 0.59  0.60	 1.78	1.0		3.0		sBzK	MUSYC	Blanc0803.0763v2
+2.6			 0.01 0.01	 4.5		4.49		4.51		LAE		LALA	Kovac07, Observed
+3.7			 0.01 0.01	 4.5		4.49		4.51		LAE		LALA	Kovac07, Corrected for Contamination
+3.7			 0.01 0.01	 4.5		4.49		4.51		LAE		LALA	Kovac07, Corrected for Contamination
+3.0			 0.5   0.50 	 3.0		2.99		3.01		LBGs	GOODS	Lee06, U-drops and R<25.5 at z~3. 
+3.8			 0.4   0.40	 3.8		3.79		3.81		LBGs	GOODS	Lee06, B-drops and R<25.5 at z~3. 
+3.4			 0.6   0.60 	 4.8		4.79		4.81		LBGs	GOODS	Lee06, V-drops and R<25.5 at z~3. 
+#			       			 4.86								       	Ouchi03
+#			       			 4.86								       	Ouchi04
+#			       			 4.86								       	Ouchi05
+#
+#
+4.0			 1.4	  0.8		 1.0		0.99		1.01		DRG		UKIDSS UDS	Foucaud07, Basilakos08
+4.8			 1.7	  1.1		 1.5		1.49		1.51		DRG		UKIDSS		Foucaud07, Grazian06
+4.8			 1.7	  1.1		 2.7		2.69		2.71		DRG		UKIDSS		Grazian06
+4.1			 0.90  0.90	 1.20	1.19		1.21		ERO		ELAIS/Phoenix	Roche02, Georgakakis05, Basilakos0
+1.3   		 0.10  0.10	 0.74	0.69		0.71		midIR 	GOODS	  	Gilli07, f_24>20uJy
+1.4   		 0.10  0.10	 0.81	0.74		0.76		midIR 	GOODS	  	Gilli07, L_IR>10^10
+1.6   		 0.15  0.15	 1.00	0.99		1.01		midIR 	GOODS	  	Gilli07, L_IR>10^11
+#
+9.6   		 0.15  0.15	 1.00	0.99		1.01		midIR 	GOODS	  	Miyaji07
+Francke
+
+# BzKs, ULIRGS, LBGs, LRGs etc. \\
+#
+# For 2QZ, Croom05, see Croom05_Table3.dat
+# For AGNs only,  See Gilli_AGN.dat
+#
+# Kong06 give CLUSTERING OF BzKs AND ERO (from Subaru/Suprime-Cam) but only quote w(theta) Amplitudes, A
+# but then 
+# Hayashi07 convert these numbers to r0s and plot redshift vs. r0 with M_DMH_min models. 
+
+
+Farrah06 (but r0s!)
+Moscardini98
+Overzier03
+Blain04
+Ouchi04, LBGs, z=4
+
+Adelberger00, Clustering at High Redshift, 2000, in ASP Conf. Ser. 200
+Adelberger05a, ApJ, 619, 697 (BM, BX R<25.2)
+Adelberger05b, ApJ, 620, L75 (K<20.5)
+Quadri06
+Waddington 2007
+HiZELS Geach08
+
+
+

@@ -1,0 +1,194 @@
+# This .sm file is originally from 
+# /cos/pc19a/npr/programs/
+# DEVICE postscript filename.ps 
+##############################################################################
+
+DR5Q
+
+	ERASE
+	LOCATION 5200 32000 4000 32000	
+	CTYPE black
+	LWEIGHT 4
+	EXPAND 2.2
+	LIMITS -0.2 2.9 0  80         # For UNI South
+	LIMITS -0.2 2.9 0 300         # For PRI South
+	LIMITS -0.2 2.9 0 900         # For PRI Single Plates
+	BOX                   		 # Draw the axes
+	PTYPE 4 0              		 # Choose square point markers
+	ANGLE 0
+	CTYPE black
+	RELOCATE 0.95 115
+	XLABEL redshift 
+	YLABEL No. of quasars (0.05 z bins)
+	
+
+DR5Q_UNI22_S
+
+	DATA z_values_S_UNI22.dat
+	READ {redshift 1 quasars 2 randoms 3}
+	
+	LTYPE 1
+	CTYPE blue
+	HISTOGRAM redshift quasars
+	#POINTS redshift data
+	#SHADE HISTOGRAM 500 redshift (bright+COMBOb)
+
+	LTYPE 1
+	CTYPE blue
+	CONNECT redshift (randoms/32.05)
+
+
+	RELOCATE 0.35 73
+	LABEL DR5Q
+	RELOCATE 0.35 68 
+	LABEL UNIFORM 
+	RELOCATE 0.35 63
+	LABEL SGC
+
+DR5Q_PRI22_S
+
+	DATA z_values_temp.dat
+	READ {redshift 1 quasars 2 randoms 3}
+	
+	LTYPE 0
+	CTYPE blue
+	HISTOGRAM redshift quasars
+	#POINTS redshift data
+	#SHADE HISTOGRAM 500 redshift (bright+COMBOb)
+
+	LTYPE 0
+	CTYPE blue
+	CONNECT redshift (randoms/22.88)
+
+	RELOCATE 0.35 250
+	LABEL DR5Q
+	RELOCATE 0.35 68 
+	LABEL PRIMARY
+	RELOCATE 0.35 63
+	LABEL SGC
+
+
+DR5Q_PRI22_SinglePlate
+
+	DATA z_values_SinglePlate_temp.dat
+	READ {redshift 1 quasars 2 randoms 3}
+	
+	LTYPE 0
+	CTYPE blue
+	HISTOGRAM redshift quasars
+
+	LTYPE 0
+	CTYPE blue
+	CONNECT redshift (randoms/22.88)
+
+	RELOCATE 0.35 250
+	LABEL DR5Q
+	RELOCATE 0.35 68 
+	LABEL PRIMARY
+	RELOCATE 0.35 63
+	LABEL Single Plates
+	
+
+
+DR5Q_UNI22_fit
+
+	set c1=        -2.8742
+        set c2=       123.1136
+        set c3=     -1378.7137
+        set c4=      5868.9771
+        set c5=     -1240.5315
+        set c6=    -29637.7891
+        set c7=    -84736.7266
+        set c8=    219122.1406
+        set c9=    939432.0625
+        set c10=    -71725.8672
+        set c11=  -5583464.0000
+        set c12=  -4236347.0000
+        set c13=  12236592.0000
+        set c14=  12460135.0000
+
+	ltype 4
+	ctype cyan
+        set z=-0.5,0.5,0.01	
+         connect (z+0.5) (10**(c1+c2*z+c3*z**2.0+c4*z**3.0+c5*z**4.0+c6*z**5.0+c7*z**6.0+c8*z**7.0+c9*z**8.0+c10*z**9.0+c11*z**10.0+c12*z**11.0+c13*z**12+c14*z**13)) 
+	#ctype green 
+	#connect (z+0.5) (10**(c1+c2*z+c3*z**2.0+c4*z**3.0+c5*z**4.0+c6*z**5.0+c7*z**6.0+c8*z**7.0+c9*z**8.0+c10*z**9.0+c11*z**10.0+c12*z**11.0))
+
+
+
+DR5Q_Letter
+
+	#DATA z_values_DR5Q_20061208.dat
+	#DATA z_values_DR5Q_20070181.dat
+	DATA z_values_DR5Q_Fig3.dat
+	#DATA z_values_DR5Q_temp_S11_COSMOS.dat
+	READ { redshift 1 number 2 rnd 3 riz_i 9 riz_z 10 gri 11}
+	
+	#DATA z_values_DR5Q_Area_A.dat
+	#READ { redshift 1 number 2 rnd 3 riz_i 9}
+	
+	#DATA z_values_DR5Q_Area_B.dat
+	#READ { redshift 1 number 2 rnd 3 riz_z 9 }
+
+	LWEIGHT 4
+	LTYPE 0
+	CTYPE black
+	#HISTOGRAM redshift (gri+riz_i+riz_z)
+	#LTYPE 0
+	#ANGLE 315
+	#SHADE HISTOGRAM 500 redshift (bright+COMBOb)
+	
+	LTYPE 1
+	CTYPE blue	
+	HISTOGRAM redshift (gri)
+	
+	LTYPE 0 #3 if including the full sample histogram (gri+riz_i+riz_z)
+	CTYPE red
+	HISTOGRAM redshift (riz_i)
+	
+	LTYPE 2
+	CTYPE cyan
+	HISTOGRAM redshift (riz_z)		
+
+	#XPAND 1.8
+	RELOCATE 0.44 72
+	LTYPE 1 
+	CTYPE blue
+	DRAW 0.52 72
+	RELOCATE 0.54 70
+	LABEL 172  i_{deV} \leq 19.8 #LRGs
+
+	RELOCATE 0.44 66
+	LTYPE 0 #3 if including the full sample histogram (gri+riz_i+riz_z)
+	CTYPE red
+	DRAW 0.52 66
+	RELOCATE 0.54 64
+	LABEL 335  19.8 < i_{deV} \leq  20.5 #LRGs
+
+	RELOCATE 0.44 60
+	LTYPE 2
+	CTYPE cyan
+	ANGLE 45
+	DRAW 0.52 60
+	ANGLE 0
+	RELOCATE 0.54 58
+	LABEL  80  19.5 < z \leq  20.2 #LRGs
+	EXPAND 2.2
+
+DR5Q_Letter_randoms
+
+	#DATA z_values_DR5Q_20061208.dat
+	#DATA z_values_DR5Q_20070181.dat
+	DATA z_values_DR5Q_temp.dat
+	#DATA z_values_DR5Q_temp_S11_COSMOS.dat
+	
+	READ { redshift 1 number 2 rnd 3 riz_i 9 riz_z 10 gri 11}
+	#hundred_z, int(z_bin(i)), int(z_rnd_bin(i)), &
+        #& real(z_bin(i)/N_data), int(z_bin_COS(i)), int(z_bin_d05(i)), &
+        #& int(z_bin_rnd_COS(i)), int(z_bin_rnd_d05(i)), &
+        #& int(z_bin_i20pnt5(i)), int(z_bin_z20pnt2(i)), int(z_bin_i19pnt8(i))
+
+	LTYPE 0
+	CTYPE cyan
+	CONNECT redshift (rnd/20)
+

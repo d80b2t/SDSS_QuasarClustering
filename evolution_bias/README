@@ -1,0 +1,5 @@
+README for /Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/evolution_bias/
+
+Ross08_bias_UNIFORM_evol.dat 
+follows procedure in da Angela et al. (2008) v. closely and assumes:
+Omega_m=0.3, Omega_Lambda=0.7, Gamma=0.17 and a sigma8= 0.84. 

@@ -1,0 +1,71 @@
+Date: Mon, 11 Feb 2008 13:01:30 +1100 (EST)
+From: Scott Croom <scroom@physics.usyd.edu.au>
+To: Nic Ross <npr@astro.psu.edu>
+Subject: Re: Croom et al. (2005) favour
+Parts/Attachments:
+   1 Shown    15 lines  Text
+   2   OK     52 KB     Application, ""
+----------------------------------------
+
+Hi Nic,
+        sorry for the delay in replying to you.  I put it down to the combined effects of a new baby and grant writing!  Anway...
+
+> In specific, the (WMAP cosmology) points from
+> Fig. 10, Fig. 17 and Fig. 26.
+
+There is a file attached which contains all these.  The README file lists which files are which (I've just sent you the ones you
+requested).  The only one which may not be obvious is the 6QZ one, which is for fig. 26a. I'm also not 100% sure that the version I've sent
+you of the data for fig. 26 is the right one (probably is).
+
+Cheers,
+
+Scott
+    [ Part 2, ""  Application/X-GZIP  69KB. ]
+    [ Not Shown. Use the "V" command to view or save this part. ]
+
+
+
+# This directory contains xi(r) results from the final 2QZ:
+# From 8/7/03
+*_xir00*   - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-2.9, 10x rands, field-to-field section 1
+*_xir01*   - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-2.9, 10x rands, field-to-field section 2
+*_xir02*   - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-2.9, 10x rands, field-to-field section 3
+*_xir03*   - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-2.9, 10x rands, full xi(s) s<9999Mpc
+*_xir04*   - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-2.9, 50x rands, s<300Mpc
+*_xir05*   - 70% comp sectors + masking Lam=0.0, Om=1.0 z=0.3-2.9, 50x rands, s<300Mpc
+*_xir06*   - 70% comp sectors + RA/Dec mixing Lam=0.7, Om=0.3 z=0.3-2.9, 50x rands, s<300Mpc
+*_xir07*   - 70% comp sectors + RA/Dec mixing Lam=0.0, Om=1.0 z=0.3-2.9, 50x rands, s<300Mpc
+*_xir08-12 - 70% comp sectors + masking Lam=0.7, Om=0.3, 5  z intervals, 50x rands, s<300Mpc 
+*_xir13-22 - 70% comp sectors + masking Lam=0.7, Om=0.3, 10 z intervals, 50x rands, s<300Mpc 
+*_xir23-27 - 70% comp sectors + masking Lam=0.7, Om=0.3, 5 b_J intervals, 50x rands, s<300Mpc  
+*_xir28-32 - 70% comp sectors + RA/Dec mixing Lam=0.7, Om=0.3, 5 b_J intervals, 50x rands, s<300Mpc  
+*_xir33-42 - 70% comp sectors + masking Lam=0.0, Om=1.0, 10 z intervals, 50x rands, s<300Mpc 
+*_xir43*   - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-2.2, 10x rands, s<300Mpc
+*_xir44*   - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-2.9, 10x rands, s<9999Mpc, ext mask, field-to-field section 1 
+*_xir45*   - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-2.9, 10x rands, s<9999Mpc, ext mask, field-to-field section 2
+*_xir46*   - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-2.9, 10x rands, s<9999Mpc, ext mask, field-to-field section 3
+*_xir47*   - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-2.9, 10x rands, s<9999Mpc, ext mask, (should be same as 03)
+*_xir48*   - 70% comp sectors + masking Lam=0.0, Om=1.0 z=0.3-2.9, 10x rands, s<9999Mpc, ext mask
+*_xir49*   - 70% comp sectors + masking Lam=0.1, Om=0.9 z=0.3-2.9, 10x rands, s<9999Mpc, ext mask
+*_xir50-54 - 70% comp sectors + RA/Dec/z mixing Lam=0.7, Om=0.3, 5 b_J intervals, 50x rands, s<300Mpc  
+*_xir55-59 - 70% comp sectors + masking with mag dependence Lam=0.7, Om=0.3, 5 b_J intervals, 50x rands, s<300Mpc
+All runs from this point have masking with mag dependence:   
+*_xir60-69 - 70% comp sectors + RA/Dec mixing Lam=0.7, Om=0.3, 10 z intervals, 50x rands, s<300Mpc  
+*_xir70-79 - 70% comp sectors + RA/Dec/z mixing Lam=0.7, Om=0.3, 10 z intervals, 50x rands, s<300Mpc  
+*_xir80    - 70% comp sectors + masking pair weighted combination of individual UKST fields z=0.25-2.9 only Lam=0.7, Om=0.3, 50x rands, s<300Mpc  
+*_xir81-90 - 70% comp sectors + masking Lam=0.73, Om=0.27 (WMAP), 10 z intervals, 50x rands, s<300Mpc 
+*_xir91    - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-2.2, 50x rands, s<300Mpc
+*_xir92    - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-1.5, 50x rands, s<300Mpc
+*_xir93    - 70% comp sectors + masking Lam=0.7, Om=0.3 z=1.5-2.9, 50x rands, s<300Mpc
+*_xir94    - 70% comp sectors + masking Lam=0.73, Om=0.27 z=0.3-2.9, 50x rands, s<300Mpc
+*_xir95    - 70% comp sectors + masking Lam=0.7, Om=0.3 z=0.3-2.9, 50x rands, s<300Mpc RADIO detections only
+*_xir96    - 70% comp sectors + RA/Dec mixing Lam=0.7, Om=0.3 z=0.3-2.9, 50x rands, s<300Mpc RADIO detections only
+*_xir97    - 70% comp sectors + RA/Dec/z Lam=0.7, Om=0.3 z=0.3-2.9, 50x rands, s<300Mpc RADIO detections only
+*_xir98    - 70% comp sectors + masking Lam=0.73, Om=0.27 z=0.3-2.2, 50x rands, s<300Mpc
+*_xir99    - 70% comp sectors + masking Lam=0.00, Om=1.00 z=0.3-2.2, 50x rands, s<300Mpc
+*_xir100   - 70% comp sectors + RA/Dec mixing Lam=0.73, Om=0.27 z=0.3-2.2, 50x rands, s<300Mpc
+*_xir101   - 70% comp sectors + masking Lam=0.73, Om=0.27 z=0.3-2.2, 10x rands, s<9999Mpc
+*_xir102-106 - 70% comp sectors + masking with mag dependence Lam=0.73, Om=0.27, z=0.3-2.2 5 b_J intervals, 50x rands, s<300Mpc
+*_xir107   - 70% comp sectors + masking Lam=0.73, Om=0.27 z=0.3-2.2, 10x rands, s<9999Mpc, field-to-field section 1 
+*_xir108   - 70% comp sectors + masking Lam=0.73, Om=0.27 z=0.3-2.2, 10x rands, s<9999Mpc, field-to-field section 2
+*_xir109   - 70% comp sectors + masking Lam=0.73, Om=0.27 z=0.3-2.2, 10x rands, s<9999Mpc, field-to-field section 3

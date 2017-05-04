@@ -1,0 +1,62 @@
+
+Plot
+	xis_DR5_quasars_0pnt30z2pnt90_20080120.ps
+made using
+     xis_plot
+from
+	OP/OP_20080120/k_output_20080120_0pnt30z2pnt90.dat
+
+
+Plot
+	xis_DR5_quasars_0pnt30z0pnt68_20080121.dat
+made using
+     xis_plot.pro
+from 
+     OP/OP_20080121/k_output_20080121_0pnt30z0pnt68.dat
+
+
+Plot
+	xis_DR5_quasars_2pnt25z2pnt90_20080122.dat
+made using
+     xis_plot
+from
+	OP/OP_20080122/k_output_20080122_2pnt25z2pnt90.dat
+	
+
+Plot
+	xis_DR5_quasars_0pnt30z2pnt90_20080120_wPLfits.ps
+made using
+     xis_plot
+from
+	OP/OP_20080120/k_output_20080120_0pnt30z2pnt90.dat
+
+
+Plot
+	xis_DR5_quasars_0pnt68z0pnt92_20080122b.ps	
+made using
+     xis_plot
+from 
+     OP/OP_20080122b/k_output_20080122_0pnt68z0pnt92.dat
+
+
+
+Plot
+	xis_DR5_quasars_0pnt92z1pnt13_20080123.ps	
+made using
+     xis_plot
+from 
+
+
+Plot: 
+      xis_DR5_quasars_20080310.ps
+made from
+     an old k_output_temp.dat file that I no longer have (d'oh). 
+     Hmmmm, might be in OP_20080306..... ?????
+
+
+Plot: 
+      xis_DR5_quasars_20080317.ps
+made from:
+     OP_20080315/k_output_20080315.dat
+     
+

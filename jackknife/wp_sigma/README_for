@@ -1,0 +1,8 @@
+K_wp_output_UNI22_jackknife_errors_for_wFibre.dat
+has 
+3 extra rows added at the smallest scales, so as to keep the bins "lined up" 
+when plotting. 
+
+We take the Poisson error from OP/OP_UNI22_wFibre/K_wp_output_UNI22_wFibre.dat
+and scale it by a factor of 4.88 which is the mean jack/delta_Xi_sigma for
+scales sigma< 5 h^-1 Mpc (from the "regular", OP/OP_20080508/K_wp_output_UNI22.dat' file.)

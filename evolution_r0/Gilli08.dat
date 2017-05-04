@@ -1,0 +1,9 @@
+# z_lo	z  	z_hi  	 r0	   r0_plus  r0_minus	gamma	plus	minus
+#
+# Gilli et al., 2008, arXiv:0810.4769v2
+# The spatial clustering of X-ray selected AGN in the XMM-COSMOS field
+# L[0.5-10] = 6.3 x 10^43 erg s-1, over r_p = 0.3 - 40 h^1 Mpc
+0.001 0.98 0.001	   8.65    0.41 0.48	1.88	   0.06 0.07   # Table 1, top line
+0.001 0.98 0.001	   8.65    0.410.48    1.88	   0.06 0.07  # duplicated for IDL plotting
+
+

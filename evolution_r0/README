@@ -1,0 +1,39 @@
+README 
+-------
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/evolution_r0 > 
+
+
+The values of the r0s with the redshift-evolution come
+from the program:
+r0_gamma_from_wpsigma.pro
+in the ../programs/quasars directory. 
+
+Note, here we set the power-law to a fixed value (current gamma=1.8d) and
+then invert the wp(sigma) values on a point-by-point basis to find
+the value of r0 which would correspond *and* the error (by doing a V. simple
+error on the mean.)
+
+
+npr
+04 Aug 2008
+
+
+
+
+
+
+OP_20080120 has UNIFORM 0.30 < z < 2.90
+
+OP_20080121 		has UNIFORM 0.30 < z < 0.68
+OP_20080122     	has UNIFORM 2.25 < z < 2.90
+OP_20080122b 	has UNIFORM 0.68 < z < 0.92
+OP_20080123   	has UNIFORM 0.92 < z < 1.13
+OP_20080124 	    	has UNIFORM 1.13 < z < 1.32
+OP_20080215		has UNIFORM 1.32 < z < 1.50
+OP_20080215b	has UNIFORM 1.50 < z < 1.66
+OP_20080215c	has UNIFORM 1.66 < z < 1.83
+OP_20080215d	has UNIFORM 1.83 < z < 2.02
+OP_20080215e	has UNIFORM 2.02 < z < 2.25
+
+
+

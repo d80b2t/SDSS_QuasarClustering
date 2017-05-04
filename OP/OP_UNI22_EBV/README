@@ -1,0 +1,18 @@
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/OP/OP_UNI22_EBV/
+
+Has the 2PCF estimates of the UNI22 sample, but split on the sky
+by reddening i.e. E(B-V) value from Schlegel et al. (1998).
+
+
+!!!!!!!  NOTE   !!!!!
+The two smallest scales of:
+K_wp_output_UNI22_EBVle0pnt0217.dat
+ie.  (s, log_s)=(0.31622776 -0.5)  and  (s, log_s)=  0.5011872 -0.3
+have been copied from K_wp_output_UNI22_EBVgt0pnt0217.dat
+in order to get the jackknife errors to "line up" properly. 
+
+Shouldn't really be an issue when plotting so long as you plot
+the gt0pnt2s OVER the lt0pnt2 data. 
+
+npr
+08 sept 2008

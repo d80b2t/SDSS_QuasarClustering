@@ -1,0 +1,61 @@
+README
+-------
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/chisq/
+
+
+General news
+-----------
+My old, but recently updated FORTRAN program:
+   s0_gamma_from_xis_DR5Q.*
+takes the measured xi(s) values, fits a Single Power-law mode over a given range of
+s0s, gammas and s_maxs, and produces a file titled: 
+     k_output_DR5Q_chisq_1.dat.
+ 
+This has the chi^2 values and also the delta chi^2s need by
+     contour_s0_gamma_DR5Q.pro 
+or inded 
+   contour_s0_gamma_DR5Q_3by3.pro
+to plot the s0/gamma confidence levels a la joint 2-param fittings (Press et al. 1992 
+FORTRAN receipes book). 
+	fit_s0_gamma_rv1.ps
+is the resulting plot. 
+
+
+Latest I/P Version:
+---------------
+The latest version of the data files we are using is found in:
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/OP/UNI22_evol_10logbins_xis/ 
+
+I tried going to both s_max=20 and s_max=25h^1 Mpc. 
+There was some, but only really a little, change in the s0 values for all the sub-samples
+except the 2.02<z<2.20, where only the s=25 limit made any sense. 
+
+There was a sizeable difference in the gamma values, but these were generally all
+over the place anyway from sub-sample to sub-sample (a la Croom05). 
+
+
+
+Old I/P Version:
+------------
+The files in the 20080718 directory were made using the (slightly) out-dated files:
+../OP/OP_20080121/k_output_20080121_0pnt30z0pnt68.dat
+../OP/OP_20080122b/k_output_20080122_0pnt68z0pnt92.dat
+../OP/OP_20080123/k_output_20080123_0pnt92z1pnt13.dat
+../OP/OP_20080124/k_output_20080124_1pnt13z1pnt32.dat
+../OP/OP_20080215/k_output_20080215_1pnt32z1pnt50.dat
+../OP/OP_20080215b/k_output_20080215_1pnt50z1pnt66.dat
+../OP/OP_20080215c/k_output_20080215_1pnt66z1pnt83.dat
+ ../OP/OP_20080215d/k_output_20080215_1pnt83z2pnt02.dat
+../OP/OP_20080215e/k_output_20080215_2pnt02z2pnt25.dat
+../OP/OP_20080122/k_output_20080122_2pnt25z2pnt90.dat')
+and the 
+    s0_gamma_from_xis_DR5Q_20080718.f90
+code (which is now in ../programs/quasars/old_f90/).
+with the upper limit at 
+     s=25.0 h^-1 Mpc. 
+
+npr
+21st June 2008
+
+
+

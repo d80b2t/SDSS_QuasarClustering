@@ -1,0 +1,88 @@
+Date: Wed, 17 Oct 2007 14:11:43 -0400 (EDT) From: Yue Shen
+<yshen@astro.princeton.edu> To: Nic Ross <npr@astro.psu.edu> Subject:
+Re: uniform DR5 quasar/random catalogs
+
+Hi Nic,
+
+I addressed your questions below.
+
+> 1) From what I can tell, the ``Uniform'' sample contains 38 208
+> objects, i.e. just under half of the 77 429 objects in the DR5
+> spectroscopic quasar catalog.  Yes, the sample size reduces to half
+> when you only include uniformly-selected quasars.
+> data!), but I was just wondering if you could give me an *v. quick*
+> overview as to what sort of selections you place (just repeating
+> those given in Shen et al. (2007) Sec. 2.2 or something a bit
+> different?) and which cuts lose the most objects etc.  
+
+OK, so to be a uniformly-select quasar, it must be targeted as one of
+the five main  quasar targets described in Richards et al. (2002, AJ,
+123, 2945); and it must also be targeted using target version V3_1_0
+or later (because the algorithm in Richards et al. was only
+implemented after DR1; my angular mask has taken care of that
+detail). Quasars that were targeted with QSO_HIZ only (one of the five
+main QSO targets) are targeted to i fainter than 19.1 at z<2.9, so I
+have removed those objects to make sure that at z<2.9 the sample is
+flux limited to i=19.1 (you may find some discussions on this in
+Fig. 17 of Richards et al. 2006, AJ, 131, 2766 for the LF paper). The
+number of these objects that are fainter than i=19.1 at z<2.9 is tiny
+compared with the whole clustering sample.
+
+Imposing these criterion to the 77,429 objects in the catalog you cut
+it down to 38,208 objects.
+
+> e.g. in Shen (2007) you say 13.1% of the high-z quasars are in bad
+> fields.  Assuming this number is approx. the same for the entire
+> sample, this would lose ~10,000 objects. How do the other ~30,000 or
+> so objects get selected out?  
+
+This 13.1% is another detail, which we further exclude quasars
+selected in those "BAD" imaging fields (a "field" is a basic SDSS
+imaging run unit of the size 10'x13') in our highz clustering
+sample. And a field is identified as "BAD" according to the criterions
+outlined in sec. 2.2 of our highz qso clustering paper. Since we found
+it didn't make a big difference, we don't need to consider this detail
+for our current purposes (plus, this additional cut will reduce the
+number of quasars again).
+
+I am sorry that the SDSS survey is a little bit complicated because of
+the large volumn. But I guess we will have to live on with it:-)
+
+
+> 2) The randoms (obviously) only have the angular selection function
+> taken into account at the moment.  Is there a particular reason for
+> this?  To calculate e.g. xi(s), I will probably take the current,
+> (uniform) DR5 N(z) distribution, fit a smoothed function to it and
+> then use this to generate values for the random z-dimension
+> (assuming there is nothing special about the order of the given
+> randoms). 
+
+Yes, the reason that the random points only have ra and dec is because
+there are different ways to assign random redshifts. You can either
+assign random redshifts by fitting a smooth function to the uniform
+DR5 N(z) distribution, or in my case, I would bin N(z) at a grid of
+dz=0.05 for example, and assign random redshifts according to the
+binned distribution. I, and other people, found it didn't make a big
+difference when you use different ways to assign random redshifts, as
+long as the random redshifts more or less trace the real N(z)
+distribution. The random sample is totally random, so you don't need
+to worry about the order. I suggest you do the smoothed function
+thing, and I will do the binned distribution thing, and we can compare
+our results with each other (I guess it won't be very different, but
+we'd better make sure of that).
+
+
+> 3) Thanks for the note on `spherematch' too. I'll try and
+> incorporate this in due course.  
+
+For the spherematch, yes, it searches for pairs with certain angular
+separation, and then you convert the angular separation into physical
+separation using redshift info. Good thing about spherematch is it is
+implemented in IDL (but it is writted in C) and is easy to use.
+
+I hope my answers are helpful. Some related discussions on the
+selection of a uniform quasar sample can be found in Richards et al.
+(2006, AJ, 131, 2766) for the SDSS quasar luminosity function paper.
+
+
+Cheers, Yue

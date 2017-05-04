@@ -1,0 +1,69 @@
+========================================================
+==
+==    http://www.astro.psu.edu/users/npr/DR5/notes.txt
+==    Notes for SDSS Quasar DR5 work
+== 
+========================================================
+
+
+Clustering evolution with redshift/lookback time
+===============================
+	
+s0_with_redshift_20080326.pdf
+Evolution of the redshift-space Correlation Length, $s_{0}$.
+Black Points, this work; Green Points, \citet{Croom05}; 
+Red   points, \citet{Myers06}; Blue  points, \citet{Shen07}.
+With diamonds from various other surveys incl. 2dFGRS, SDSS MAIN, SDSS LRG, 
+2SLAQ LRG, VVDS, DEEP2. 
+
+s0_with_lookback_time_20080326.pdf}
+Evolution of the redshift-space Correlation Length, $s_{0}$.
+Black Points, this work; Green Points, \citet{Croom05}; 
+Red   points, \citet{Myers06};   Blue  points, \citet{Shen07}.
+With diamonds from various other surveys incl. 2dfGRS, SDSS MAIN, SDSS LRG, 
+2SLAQ LRG, VVDS, DEEP2. }
+
+
+
+
+
+Ab_iMag_plots. 
+=============
+
+These are plots of Absolute I-band Magnitude (calculated by Schneider et al. 2007)  
+against redshift for various (sub-)samples of the spectroscopic DR5 Quasar catalogue.
+
+The suffix gives the sample selection. 
+Note:
+PRI   = HIZ+QSO+FIRST
+PRIz =      "                   + z<2.9
+PRIs = !HIZ + !QSO + !FIRST +SEREN + z<2.9   
+HIZz = HIZ + z<2.9
+(+ is logical `AND'; ! is logical `NOT')
+
+
+
+DR5_quasars_ra_dec plots. 
+=================
+
+DR5_quasars_ra_dec                has all 77 429 DR5Q plotted, plus all the DR5 Plates
+(plate centres from the `PlateX' table). 
+
+DR5_quasars_ra_dec_Plate716 has all 77 429 DR5Q plotted, plus all the DR5 Plates
+which have a plate number >=716. This plate is the plate with the first spectroscopic
+observations based on the final verions of the quasar target selection algorithm (S07).
+
+DR5_quasars_CAS_ra_dec plots have the DR5Q quasars and the DR5 quasar targets 
+selected using the GTR `Uniform Quasar Selection' SQL query, both with and without
+the line ``having min(g.targetversion) >= 'v3_1_0' '' in the WHERE clause.
+
+With this line, you get 82 319 targets over 4019 deg^2. (i.e.  20.48 targets / deg^2) 
+Without, you get 116 237 over 5713 deg^2.                   (i.e.  20.34 targets / deg^2) 
+(cf. 202 958 PhotoObjAll targets with (primtarg & 0x1f)>0 over 8000 degs^2 
+ i.e. 25.37 targets degs^-2.
+
+
+
+NPR
+20-Dec-2007 16:36
+/Volumes/Bulk/npr/cos_pc19a_npr/programs/quasars/data

@@ -1,0 +1,42 @@
+quit
+DATA mydata             # Specify desired datafile
+LINES 3 100             # Choose which lines to use
+READ i 1                # Read column 1 into `i'
+READ { ii 2 iii 3 }     # Read column 2 into `ii' and 3 into `iii'
+LIMITS i ii             # Choose limits, based on i and ii
+BOX                     # Draw the axes
+PTYPE 4 0               # Choose square point markers
+POINTS i ii             # Plot i against ii
+CONNECT i ii            # and connect the points
+XLABEL This is i        # Label the X-axis
+YLABEL This is ii       # And the Y
+DEVICE x11
+DATA mydata             # Specify desired datafile
+LINES 3 100             # Choose which lines to use
+READ i 1                # Read column 1 into `i'
+READ { ii 2 iii 3 }     # Read column 2 into `ii' and 3 into `iii'
+LIMITS i ii             # Choose limits, based on i and ii
+BOX                     # Draw the axes
+PTYPE 4 0               # Choose square point markers
+POINTS i ii             # Plot i against ii
+CONNECT i ii            # and connect the points
+XLABEL This is i        # Label the X-axis
+YLABEL This is ii       # And the Y
+           #aitoff l b x y <break>
+           if (!$?5) {define _break 0} else {define _break $5}
+           set _rl = ($1-$_break)
+           set _rl = (_rl>360)?(_rl-360):_rl
+           set _rl = (_rl<0)?(_rl+360):_rl
+           set _rl = 90. - 0.5*_rl
+           set _den = sqrt(1 + cosd($2)*cosd(_rl))
+           set $3 = 2.*cosd($2)*sind(_rl)/_den
+           set $4 = 90.*sind($2)/_den
+           set $3 = 180. - 90.*$3
+           if ($?invaitoff) {
+             if ($invaitoff) {set $3 = 360. - $3}}
+           delete _rl
+           define _break delete
+           delete _den
+quit
+DEVICE x11
+quit

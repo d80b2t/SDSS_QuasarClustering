@@ -1,0 +1,7 @@
+# z_lo	z  	z_hi  	 r0	   r0_plus  r0_minus	gamma	plus	minus
+#
+# Gilli 08 data, XMM-COSMOS, using "550 AGN"
+# Ref: THE X-RAY UNIVERSE 2008 conference, XMM-Newton SOC, 27-30 May 2008
+# Granada, Spain, xru2008-abstractbook_v1.4.pdf
+0.001 1.00 0.001	   8.3    0.4	1.89	   0.07
+0.001 1.00 0.001	   8.3    0.4	1.89	   0.07    #duplicated for IDL plotting....

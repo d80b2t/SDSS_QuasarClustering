@@ -1,0 +1,52 @@
+These files *20080507* were the second attempt to get the 2PCF 
+using a nice and uniformly distributed random catalouge: 
+
+randoms_npr_PRIMARY_20080502v2.dat
+and 
+DR5QSO_pri_data_20080502.dat 
+cutting at 0.30<z<2.2. 
+
+This had the mrdfits issue (in q_z_bin_v1_04.pro) fixed. 
+
+The original (ra,dec) (eta,lambda) file remains:
+/Volumes/Bulk/npr/cos_pc19a_npr/data/Quasars/CAS/mask/ra_dec_eta_lambda_randoms_20080502
+
+NB: ra_dec_eta_lambda_randoms_20080502.dat give both 
+    randoms_npr_PRIMARY_20080502.dat and 
+    randoms_npr_PRIMARY_20080502v2.dat but 
+    the mrdfits issues caused randoms_npr_PRIMARY_20080502.dat to not reproduce the ra,dec distrib.
+
+
+Although much closer to the e.g. 2QZ, result, 
+there are still issues at large (>10 h^-1 Mpc,  but particularly >50 h^-1 Mpc) scales,
+most of which I'm becoming particulary convinced is due to some issues in the Southern
+Stripes. This is supported by looking at the OP from the South only (5661 datas, 135230 randoms, noting that even here you have 5660/4438=12.76% of the data and 13.5% of
+the randoms, which might be an issue....) which has the upturn seen in the eg. 200804* 
+data. 
+
+Well, not so fast. 
+Some of this maybe due to the South stripes but not all by any means - 
+the North just dominates the numbers. Another couple of possibilties are
+that the angular mask is still not quite right (which it isn't) and I think I
+was normalising the random N(z) by an old number in q_z_bin_v1_05.pro: 
+ 
+if choice eq 'P' then norm=1644. ;for z_max=2.9 
+vs. 
+if choice eq 'P' then norm=1500. ;for z_max=2.2
+
+which doens't look like a huge difference but gives a much nicer fit
+to the 0.30<z<2.2. 
+
+This was adopted in:
+open(1,file='../data/DR5QSO_pri_data_20080508.dat') 
+[which is identical to DR5QSO_pri_data_20080502.dat 
+and
+open(2,file='../randoms/randoms_npr_PRIMARY_20080508.dat')
+and is running now...
+
+
+
+
+
+
+

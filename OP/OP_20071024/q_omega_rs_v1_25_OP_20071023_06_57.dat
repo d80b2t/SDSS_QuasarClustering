@@ -1,0 +1,17 @@
+# temporary file with outputs from q_omega_rs_v1_25.pro which crashed
+# at 06:57am on 23 Oct 2007 but had done all the pair counting. 
+#
+
+
+Eeeek. 
+Have a bad feeling I actually over-wrote these O/P files, leaving only
+the xi(sigma,pi) plots with different binnings. 
+
+However, I'm pretty sure these 
+a) had their randoms slightly wrong (either the redshift cuts weren't right, or 
+   *something* was up...) and 
+b) I was only using DD/DR estimators. 
+
+npr
+20 nov 2007
+

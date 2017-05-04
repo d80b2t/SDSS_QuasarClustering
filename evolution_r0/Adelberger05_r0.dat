@@ -1,0 +1,12 @@
+# Adelberger & Steidel, 2005, ApJ, 627, L1
+# CROSS-CORRELATION VALUES
+# loz  z       hiz	r0	r0plus	r0minus
+#2.0    2.7   3.0	5.27	1.59		1.36		#38 AGNs 10^5.8 < M_BH < 10^8 M 
+#2.0    2.7   3.0	5.27	1.59		1.36		#38 AGNs 10^5.8 < M_BH < 10^8 M
+#2.0    2.7   3.0	5.20	1.85		1.16		#41 AGNs 10^8    < M_BH < 10^10.5 M 
+#2.0    2.7   3.0	5.20	1.85		1.16		#41 AGNs 10^8    < M_BH < 10^10.5 M 
+# AUTO-CORRELATION, (xi_QG^2)/xi_GG =  xi_QQ
+2.0    2.7   3.0		6.85	1.85		1.16		#41 AGNs 10^8    < M_BH < 10^10.5 M 
+2.0    2.7   3.0		6.85	1.85		1.16		#41 AGNs 10^8    < M_BH < 10^10.5 M 
+
+

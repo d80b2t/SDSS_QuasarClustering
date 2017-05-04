@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Clustering of z<2.2 SDSS Quasars </title>
+</head>
+
+
+<body>
+<p><font face="Times New Roman, Times, serif">
+<em>Online Resources for</em></font
+<font face="Times New Roman, Times, serif" size="+2">
+<strong> <br>
+   Clustering of Low Redshift (z<2.2) Quasars from the Sloan Digital Sky Survey
+  <br></strong></font><br>
+
+<font face="Times New Roman, Times, serif">
+<a href="http://www.astro.psu.edu/users/npr/DR5/Ross_etal_2009_DR5Q_clustering.pdf" target="_blank">
+<strong>high-resolution  paper</strong></a></font>
+<font face="Times New Roman, Times, serif" size="+2"><strong></strong></font><font face="Times New Roman, Times, serif">
+<a href="http://arxiv.org/abs/0903.3230" target="_blank"><strong> astro-ph</strong></a></font>
+<br><br>
+
+<em>
+Nicholas P. Ross<sup>1</sup>,
+Yue Shen<sup>2</sup>,
+Michael A. Strauss<sup>2</sup>,
+Daniel E. Vanden Berk<sup>1</sup>,
+Andrew J. Connolly<sup>3</sup>,<br>
+Gordon T. Richards<sup>4</sup>,
+Donald P. Schneider<sup>1</sup>,
+David H. Weinberg<sup>5</sup>,
+Patrick B. Hall<sup>6</sup>,
+Neta A. Bahcall<sup>2</sup>, <br>
+Robert J.Brunner<sup>7</sup> </em><br>
+
+<sup>1</sup> Department of Astronomy and Astrophysics, The Pennsylvania State University, 525 Davey Laboratory, University Park, PA 16802, U.S.A.<br>
+<sup>2</sup> Princeton University Observatory, Princeton, NJ 08544, U.S.A.<br>
+<sup>3</sup> Department of Astronomy, University of Washington, Box 351580, Seattle, WA 98195, U.S.A.<br>
+<sup>4</sup> Department of Physics, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, U.S.A<br>
+<sup>5</sup> Astronomy Department and Center for Cosmology and AstroParticle Physics, Ohio State University, Columbus, OH 43210, U.S.A. <br>
+<sup>6</sup> Department of Physics and Astronomy, York University, Toronto, ON M3J 1P3, Canada<br>
+<sup>7</sup> Department of Astronomy, MC-221, University of Illinois, 1002 West Green Street, Urbana, IL 61801, U.S.A.<br><br>
+
+
+<p><font face="Times New Roman, Times, serif"><em> last updated: 19th March 2009 </em></font>
+<font face="Times New Roman, Times, serif"><em> by  <a href="mailto:npr@astro.psu.edu"> Nic Ross </a>
+</em></font></p><br>
+
+<!------------------------------------>
+<!--      R E A D M E               -->
+<!------------------------------------>
+<a href="http://www.astro.psu.edu/users/npr/DR5/README" > README</a><br><br>
+
+
+<!------------------------------------>
+<!--      T A R B A L L             -->
+<!------------------------------------>
+<a href="http://www.astro.psu.edu/users/npr/DR5/Ross_etal_2009_DR5Q_clustering.tar.gz" >Download tarball here</a> (62Mb zipped, 179Mb unzipped) <br><br>
+</p>
+
+
+<!------------------------------------>
+<!--      D A T A                   -->
+<!------------------------------------>
+<hr>
+<p><font size="+1"><strong><font face="Times New Roman, Times, serif" size="+2"> SDSS DR5 Quasar data and random catalogues </font></strong></font><br><br>
+  In /data <br>
+  <br>
+Use of the SDSS DR5 Quasar catalogue requires reference to 
+<a href="http://adsabs.harvard.edu/abs/2007AJ....134..102S"> Schneider et al., 2007, AJ, 134, 102</a>.<br>
+Use of the SDSS DR5 Quasar UNIFORM sample (including using the bolometric luminosity or virial BH mass information) requires
+reference to <a href="http://adsabs.harvard.edu/abs/2008ApJ...680..169S">
+Shen et al. 2008, ApJ, 680, 169. </a><br><br>
+
+<strong><font face="Times New Roman, Times, serif" size="+3 ">DATA</font></strong><br>
+<br>
+<font face="Courier">dr5qso.fits</font> (22Mb) is the full, 77,429 object strong DR5 Quasar Catalogue from Schneider et al., (2007). <br>
+<font face="Courier">DR5QSO_uni_data.fits</font> (21Mb) is the 'UNIFORM' quasar sample. The criteria for this sample originate in Richards et al. 2006, AJ, 131, 2766 and also in Shen et al., 2007,  AJ, 133, 2222. <br>
+<br>
+The UNIFORM sample itself was used in our sister paper,
+Shen et al. (2009, ApJ accepted,
+<a href="http://arxiv.org/abs/0810.4144">arXiv:0810.4144v2)</a>. <br>
+<br>
+For ease, the data file that is read into the FORTRAN 2 Point Correlation Function code is:  <font face="Courier">DR5QSO_uni_data.dat</font> (2.4Mb). <br>
+<br>
+<font face="Courier"> DR5QSO_uni_data_wFibre.dat</font> (2.4Mb) and 
+<font face="Courier"> DR5QSO_uni_data_wFibre_v2.dat</font> (2.4Mb)
+are the two data files that are used to check for the effects of fibre collisions in Appendix C. <br>
+<font face="Courier"> DR5QSO_uni_data_EBV_le_0pnt0217.dat</font> (1.2Mb) and 
+<font face="Courier"> DDR5QSO_uni_data_EBV_gt_0pnt0217.dat</font> (1.2Mb)
+are the two data files that are used to check for the effects of dust reddening in Appendix C. <br>
+<br>
+
+<strong><font face="Times New Roman, Times, serif" size="+3 ">Randoms</font></strong><br>
+<br>
+
+The necessary random catalogue files are: <font face="Courier"> randoms_npr_UNIFORM.dat (62Mb)</font>. <br>
+
+<font face="Courier"> randoms_npr_UNIFORM_EBV_gt_0pnt0217.dat </font> (32Mb) 
+and <font face="Courier"> randoms_npr_UNIFORM_EBV_le_0pnt0217.dat </font> (31Mb)
+needed for the Reddening checks (Appendix C.5). 
+
+
+</p>
+
+<!------------------------------------>
+<!--      F O R T R A N             -->
+<!------------------------------------>
+<hr>
+<p><font size="+1"><strong><font face="Times New Roman, Times, serif" size="+2"> FORTRAN 90 Two Point Correlation Function code</font></strong></font><br>
+ In /src directory.<br>
+ <br>
+
+<font face="Courier">quorrel_five_perl.f90</font><br>
+<br>
+
+This code is fairly well commented but a bit "clunky".<br>
+Needs two input files, the data and the random catalogues
+from above.<br>
+This is the main program that takes SDSS Quasar data (DR5) and computes: <br>
+  - the redshift-space correlation function, xi(s), <br>
+  - the ``2-D'' correlation function, xi(sigma,pi)  <br>
+  - the projected correlation function, wp(rp). <br>
+</p>
+
+
+<!------------------------------------>
+<!--      I D L                     -->
+<!------------------------------------>
+<hr>
+<p><font size="+1"><strong><font face="Times New Roman, Times, serif" size="+2"> IDL Scripts </font></strong></font><br>
+  In the /pro directory. <br>
+ Note, currently only the xi(s), wp(rp) and the bias evolution files and
+ routines are here (but please feel free to email me if something not present is required). <br>
+ <br>
+
+ <strong><font face="Times New Roman, Times, serif" size="+3 ">xi(s)</font></strong><br>
+In /pro/xis<br>
+<font face="Courier"> xis_plot.pro</font> does the work here.<br>
+<font face="Courier"> k_output_UNI22.dat</font> (6.6k)is the xi(s) measurement
+for the complete UNIFORM sample.<br>
+While <font face="Courier"> k_output_UNI22_XpntXXzYpntYY_10log.dat</font> (~5k)
+are the redshift slice files over X.XX < z < Y.YY. <br>
+
+
+<font face="Courier">k_output_UNI22_jackknife_errors.dat</font> has the
+jackknife errors. <br>
+<br>
+
+The 2QZ data was kindly supplied by S.M. Croom.<br>
+Any use of this data requires citation of Croom et al., 2005, MRNAS, 356, 415). <br><br>
+Any use of the results from the 2SLAQ QSO Survey requires citation of
+da Angela et al., 2008, MRNAS, 383, 565). <br>
+</p>
+
+ <strong><font face="Times New Roman, Times, serif" size="+3 ">wp(rp)</font></strong><br>
+In /pro/wp_div_rp<br>
+<font face="Courier">K_wp_output_UNI22.dat</font> (1.4k) is the wp(rp) measurement
+for the complete UNIFORM sample.<br>
+<br>
+
+
+<strong><font face="Times New Roman, Times, serif" size="+3 ">Linear bias evolution</font></strong><br>
+In /pro/evolution/bias<br>
+<br>
+
+All the files should be fairly self explanatory. <br>
+Note many other peoples work is used here. Please cite appropriately. <br>
+<br>
+
+
+
+<!------------------------------------>
+<!--  TABLE  and  FIGURES           -->
+<!------------------------------------>
+<hr>
+<p><font size="+1"><strong><font face="Times New Roman, Times, serif" size="+2"> Tables </font></strong></font><br>
+   In the /tables directory.<br>
+   These are straight cut and pastes from the main .tex file.
+
+</p>
+
+<hr>
+<font face="Times New Roman, Times, serif"><strong>
+Acknowledgement: Thanks again to Yue Shen, from who I've borrowed the style
+and raw .html from his
+<a href="http://www.astro.princeton.edu/~yshen/highz_qso_clustering/qso_clustering.htm"> High-z clustering work</a></strong>.<br>
+
+<br>
+<font face="Times New Roman, Times, serif"><strong>
+<a href="http://www.astro.psu.edu/users/npr/DR5/DISCLAIMER" > DISCLAIMER</a>
+<br><br>
+
+Version: v1.0.0 <br>
+Last updated: 19th March 2009 <br>
+Nicholas P. Ross <br>
+npr@astro.psu.edu <br>
+
+</body>
+</html>

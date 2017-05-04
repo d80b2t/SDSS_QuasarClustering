@@ -1,0 +1,19 @@
+These OP files were generated using:
+
+DR5QSO_pri_data_20080425.dat
+and
+randoms_npr_PRIMARY_20080425
+
+and the plots are:
+xis_DR5_quasars_20080428_Std.ps
+xis_DR5_quasars_20080428_LS.ps
+DDs_DRs_RRs_check_20080428.ps
+
+
+The data is the PRIMARY DR5Q sample for 0.3<z<2.2, 
+without the chunk78 (Plates 1617-1628) objects.  
+This leaves of order 44,348 (less 4?) objects.
+
+More importantly, at least for explaning the weird features of the OP xi(s), is that these randoms were "target-scaled" or "target-efficiency scaled" i.e. I weighted each sector according to the ratio of No. PRIMARY targets to the number of actual DR5Qs. As of end of last week (~2th May), I am convinced this is *not* the way to do it and we should just set down uniform randoms since the actual completeness of the survey (#quasars detected / # actually "there") is pretty (>90%) high. 
+
+

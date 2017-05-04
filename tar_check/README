@@ -1,0 +1,176 @@
+-------------------------
+--                     --
+--     R E A D M E     -- 
+--                     --
+-------------------------
+
+http://www.astro.psu.edu/users/npr/DR5/
+
+
+Welcome!
+
+Here we give some more of the background material, including data catalogues, source code and high-resolution figures
+for Ross et al. (2009, ApJ accepted, arXiv:0903:3230v1).
+This is the first in a series of two papers investigating the clustering properties of the SDSS Quasars using the Data Release 5 catalogue.
+Our sister paper is Shen et al. (2009, ApJ accepted, arXiv:0810.4144v2).
+
+This site is an "ongoing project", should not be consider a complete or comprehensive resource at this point, and will be subject to updates in due course.
+However, please feel free to email me if you have any specific questions or requests.
+
+Thanks,
+Nic
+
+
+
+TO DOWNLOAD THE MATERIAL AT 
+http://www.astro.psu.edu/users/npr/DR5/
+CLICK ON the "Download tarball here" link 
+
+Then, run gunzip:
+ >  gunzip Ross_etal_2009_DR5Q_clustering.tar.gzip
+
+Then run tar, to extract the files and directories:
+ > tar -xvf Ross_etal_2009_DR5Q_clustering.tar
+
+
+
+----------------------------------
+SDSS DR5 Quasar data and randoms
+----------------------------------
+In /data
+
+Use of the SDSS DR5 Quasar catalogue requires reference to Schneider et al., 2007, AJ, 134, 102.
+Use of the SDSS DR5 Quasar UNIFORM sample (including using the bolometric luminosity or virial BH mass information) requires reference to Shen et al. 2008, ApJ, 680, 169.
+
+Data
+----
+dr5qso.fits is the full, 77,429 object strong DR5 Quasar Catalogue from Schneider et al., 2007.
+
+DR5QSO_uni_data.fits, is the 'UNIFORM' quasar sample. The criteria for this sample originate in Richards et al. 2006, AJ, 131, 2766 and also in Shen et al., 2007,  AJ, 133, 2222.
+The UNIFORM sample itself was used in Shen et al. (2009). 
+
+For ease, the data file that is read into the FORTRAN 2 Point Correlation Function code is: 
+DR5QSO_uni_data.dat
+
+DR5QSO_uni_data_wFibre.dat
+and 
+DR5QSO_uni_data_wFibre_v2.dat
+are the two data files that are used to check for the effects of fibre collisions in Appendix C.
+
+Randoms
+---------
+The necessary random catalogue files are:
+randoms_npr_UNIFORM.dat
+
+with
+randoms_npr_UNIFORM_EBV_gt_0pnt0217.dat
+and
+randoms_npr_UNIFORM_EBV_le_0pnt0217.dat 
+needed for the Reddening checks (Appendix C.5). 
+
+
+
+------------------------------------
+FORTRAN 2 Point Correlation Function code
+------------------------------------
+In /src directory. 
+
+This code is fairly well commented but a bit "clunky"
+Needs two input files, the data and the random catalogues from above.
+
+This is the main program that takes SDSS Quasar data (DR5) and computes:
+- the redshift-space correlation function, xi(s),
+- the ``2-D'' correlation function, xi(sigma,pi)
+- the projected correlation function, wp(rp).
+
+
+
+-------------
+IDL Scripts
+-------------
+In the /pro directory.
+Note, only the 'main' generated output files are currently here.
+
+xi(s)
+------
+In  /pro/xis
+k_output_UNI22.dat (6.6k)is the xi(s) measurement for the complete UNIFORM sample.
+While k_output_UNI22_XpntXXzYpntYY_10log.dat (~5k) are the redshift slice files over X.XX < z < Y.YY.
+The columns for these files are:
+s_log, s, xi(s)_std, delta_xis (Poisson), DD pair counts, DR pair counts, RR pair counts, xi(s)_LS, xi(s)_HAM, ratio (which is not relevant).
+The format is:
+f5.2, 1x, f15.6, 1x, f15.8, 1x, f18.13, 1x, f18.0, 1x, f18.0, 1x, f18.0, 1x, f18.10, 1x, f18.10, 1x, f21.5.
+k_output_UNI22_jackknife_errors.dat has the jackknife errors. 
+
+The columns for these files are: 
+ s_log, s, xi(s)_std, delta_xis (Poisson), DD pair counts, DR pair counts, RR pair counts, xi(s)_LS, xi(s)_HAM, ratio (which is not relevant). 
+The format is:  
+f5.2, 1x, f15.6, 1x, f15.8, 1x, f18.13, 1x, f18.0, 1x, f18.0, 1x, f18.0, 1x, f18.10, 1x, f18.10, 1x, f21.5.  
+
+The 2QZ data was kindly supplied by S.M. Croom.
+Any use of this data requires citation of Croom et al., 2005, MNRAS, 356, 415).
+
+Any use of the results from the 2SLAQ QSO Survey requires citation of da Angela et al., 2008, MNRAS, 383, 565). 
+
+
+wp(rp)
+--------
+In /pro/wp_div_rp
+
+K_wp_output_UNI22.dat (1.4k)is the wp(rp) measurement for the complete UNIFORM sample.
+
+K_wp_output_UNI22_jackknife_errors.dat are the wp(rp) jackknife errors.
+
+K_wp_output_UNI22_30rnds_picut25.dat
+K_wp_output_UNI22_20rnds_picut39.dat
+K_wp_output_UNI22_30rnds_picut100.dat
+are the wp(rp) values for the full UNIFORM sample with a pi_max cut of 
+25, 39 and 100 h^-1 Mpc respectively. 
+
+K_wp_output_UNI22_wFibre.dat
+K_wp_output_UNI22_wFibre_v2.dat
+have the checks for wp(rp) and fibre collisions (i.e. Fig 25).
+
+
+Linear bias evolution
+--------------------------
+In /pro/evolution/bias
+
+Need to call "RED", a set of cosmology routines written in IDL by L. and J. Moustakas. 
+Please see:
+http://cerebus.as.arizona.edu/~ioannis/research/red/ 
+for details. 
+
+All the files should be fairly self explanatory. 
+Note many other peoples work is used here. Please cite appropriately!!
+
+
+-------
+Tables
+-------
+In the /tables directory.
+These are straight cut and pastes from the main .tex file. 
+
+
+
+
+
+LEGAL DISCLAIMER
+
+All code, data and general software is provided
+as is, without any express or implied warranty. 
+Neither the author, Dr. Nicholas P. Ross, nor
+The Pennsylvania State University accepts any liability
+or responsibility for the use of anything given here
+or any damages whatsoever resulting from the use of
+this software. 
+
+Please contact the author for further information. 
+
+
+
+
+last updated: 19th March 2009 
+by Nic Ross
+npr@astro.psu.edu
+19th March 2009
